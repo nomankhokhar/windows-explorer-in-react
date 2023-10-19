@@ -3,8 +3,7 @@
 
 Data Struture used in this App
 
-1 -> Recursion
-2 -> Tree 
+The two main data structure is used in this project first is Recursion and second is tree. for searching Depth First Search Algo Used
 
 ## Authors
 
