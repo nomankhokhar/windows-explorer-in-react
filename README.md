@@ -1,4 +1,4 @@
-![Project Screenshot](./windows_explorer.PNG)
+![Project Screenshot](./verticalAlignement.PNG)
 # This is Window's Explorer that build with React18
 
 Data Struture used in this App
