@@ -25,7 +25,7 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
 
   if (explorer.isFolder) {
     return (
-      <div style={{ marginTop: "5px" }}>
+      <div className="flex" style={{ marginTop: "5px" }}>
         <div onClick={() => setExpand(!expand)} className="folder">
           <span>📁 {explorer?.name}</span>{" "}
           <div>
@@ -34,9 +34,7 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
           </div>
         </div>
 
-        <div
-          style={{ display: expand ? "block" : "none", paddingLeft: "25px" }}
-        >
+        <div style={{ display: expand ? "block" : "none" }}>
           {showInput.visible && (
             <div className="inputContainer">
               <span>{showInput.isFolder ? "📁" : "📄"}</span>
@@ -50,15 +48,17 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
             </div>
           )}
 
-          {explorer.items.map((exp) => {
-            return (
-              <Folder
-                handleInsertNode={handleInsertNode}
-                key={exp.id}
-                explorer={exp}
-              />
-            );
-          })}
+          <div className="border" style={{ marginLeft: "50px" }}>
+            {explorer.items.map((exp) => {
+              return (
+                <Folder
+                  handleInsertNode={handleInsertNode}
+                  key={exp.id}
+                  explorer={exp}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     );
