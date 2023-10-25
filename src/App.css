@@ -4,14 +4,43 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2px;
+  padding: 10px 20px;
+  font-family: sans-serif;
   width: 300px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
+.fullHeight {
+  height: 100vh;
+}
+.relative {
+  position: relative;
+}
 .flex {
   display: flex;
   align-items: center;
+}
+
+.border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 3px solid lightgray;
+  border-radius: 10px 0 0 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin: auto 0;
+}
+
+.border::before {
+  content: "\2192";
+  font-size: 35px;
+  position: absolute;
+  color: lightgray;
+  top: 50%;
+  left: 14px;
+  transform: translate(-50%, -50%);
 }
 
 .inputContainer {
@@ -41,6 +70,11 @@
 .folder > div > button {
   font-size: 15px;
   background-color: white;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .file {

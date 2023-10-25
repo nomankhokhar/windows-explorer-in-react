@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Folder = ({ handleInsertNode = () => {}, explorer }) => {
-  const [expand, setExpand] = useState(false);
+  const [expand, setExpand] = useState(true);
   const [showInput, setShowInput] = useState({
     visible: false,
     isFolder: false,
@@ -30,7 +30,6 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
           <span>📁 {explorer?.name}</span>{" "}
           <div>
             <button onClick={(e) => handleNewFolder(e, true)}>Folder +</button>
-            <button onClick={(e) => handleNewFolder(e, false)}>File +</button>
           </div>
         </div>
 
@@ -47,23 +46,24 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
               />
             </div>
           )}
-
-          <div className="border" style={{ marginLeft: "50px" }}>
-            {explorer.items.map((exp) => {
-              return (
-                <Folder
-                  handleInsertNode={handleInsertNode}
-                  key={exp.id}
-                  explorer={exp}
-                />
-              );
-            })}
-          </div>
+          {explorer.items.length > 0 && (
+            <div className="relative">
+              <div className="border" style={{ marginLeft: "30px" }}>
+                {explorer.items?.map((exp) => {
+                  return (
+                    <Folder
+                      handleInsertNode={handleInsertNode}
+                      key={exp.id}
+                      explorer={exp}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     );
-  } else {
-    return <span className="file">📄 {explorer.name}</span>;
   }
 };
 

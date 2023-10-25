@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="fullHeight">
       <Folder handleInsertNode={handleInsertNode} explorer={explorerData} />
     </div>
   );
