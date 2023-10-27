@@ -1,0 +1,3129 @@
+[
+    {
+        "apiVersion": "v1",
+        "automountServiceAccountToken": true,
+        "kind": "ServiceAccount",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "app.kubernetes.io/version": "7.2.2",
+                "helm.sh/chart": "redis-18.1.6"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:automountServiceAccountToken": {},
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-redis",
+            "namespace": "default",
+            "resourceVersion": "88301",
+            "uid": "253bafe9-4e74-4eb4-b4be-914364a3b217"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "automountServiceAccountToken": true,
+        "kind": "ServiceAccount",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/component": "controller",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:automountServiceAccountToken": {},
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-argo-cd-argocd-app-controller",
+            "namespace": "default",
+            "resourceVersion": "88300",
+            "uid": "1a24a33d-0642-4375-8fd0-93cca6837181"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "automountServiceAccountToken": true,
+        "kind": "ServiceAccount",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/component": "repo-server",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:automountServiceAccountToken": {},
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-argo-cd-argocd-repo-server",
+            "namespace": "default",
+            "resourceVersion": "88303",
+            "uid": "753d9a6b-9fc4-45b2-a474-1c8bd67f2fa4"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "automountServiceAccountToken": true,
+        "kind": "ServiceAccount",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/component": "server",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:automountServiceAccountToken": {},
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-argo-cd-argocd-server",
+            "namespace": "default",
+            "resourceVersion": "88302",
+            "uid": "49252d05-d098-45ac-b35a-b9356a00ddb2"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "data": {
+            "redis-password": "aFJ1ZUM2N21QMg=="
+        },
+        "kind": "Secret",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "app.kubernetes.io/version": "7.2.2",
+                "helm.sh/chart": "redis-18.1.6"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:data": {
+                            ".": {},
+                            "f:redis-password": {}
+                        },
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:type": {}
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-redis",
+            "namespace": "default",
+            "resourceVersion": "88304",
+            "uid": "65de131f-eb41-478c-bd53-8c787301a1c8"
+        },
+        "type": "Opaque"
+    },
+    {
+        "apiVersion": "v1",
+        "data": {
+            "admin.password": "JDJhJDEwJC56clNZWmVCbjRnbldEcnFUSTh3MnU4MmVGeG53SWdSMmh0bDFnVUNncEdIM29rQnRqREN5",
+            "admin.passwordMtime": "MjAyMy0xMC0yNlQxNzoxNToyNlo=",
+            "clearPassword": "aFR4SkNIR3dBYg==",
+            "server.secretkey": "NFhjaXpzdFoyVHB4eEhHU2UwMVdVcVpDN2N5T2hVVUhsQlNlZmRvKzhkZz0=",
+            "tls.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURaVENDQWsyZ0F3SUJBZ0lRRkEzdTJwcEx3R2ZveVhXK2VmckE1akFOQmdrcWhraUc5dzBCQVFzRkFEQVMKTVJBd0RnWURWUVFLRXdkQmNtZHZJRU5FTUI0WERUSXpNVEF5TmpFM01UWXpNVm9YRFRJME1UQXlOVEUzTVRZegpNVm93RWpFUU1BNEdBMVVFQ2hNSFFYSm5ieUJEUkRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQUx4MGR2VEdJZnpXMkFmZVh1ODdlMTBBdHFVSXhscXVkVUhra3J4OUNLbHlNSW5PZkRWcStwREQKTWdxNUYwWnhqcjJlMDI4dk44N3dUMW5NOUVmNFFQQUlxMWVsRDJTUW1wUXNUU2RvTW1QUU5INExiQUdDZFNyNwoxTGowQ3V2M2dURDdyY3h1VTVIRHh6OHFQa0QyMnVDTTlhVlZMSEsrdWl6VEhYaGc3L3E3OUEwcVNVdkJMYmxaCnoza2pIWktpaEpRRHFvMjQ0aUw1WWZKTmF4TVlraHNCREQ1Qzl5U3NiOElZazc3WDUzSC9SOGhYcnhXOGtqVDIKVnlhM0w2Nk01QUZ5RjJ3Yjc5VnVaNFdYek01RWlNVmZmWis5V25DcXVDQm9wdzVGWXMwVmZuSmpPZEV3VDdSTgpTZFltbnRlcDZkbUtnL2REdTc3QkhSbXZ6WHF2RmxzQ0F3RUFBYU9CdGpDQnN6QU9CZ05WSFE4QkFmOEVCQU1DCkJhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUhBd0V3REFZRFZSMFRBUUgvQkFJd0FEQitCZ05WSFJFRWR6QjEKZ2dsc2IyTmhiR2h2YzNTQ0RXRnlaMjlqWkMxelpYSjJaWEtDRldGeVoyOWpaQzF6WlhKMlpYSXVaR1ZtWVhWcwpkSUlaWVhKbmIyTmtMWE5sY25abGNpNWtaV1poZFd4MExuTjJZNEluWVhKbmIyTmtMWE5sY25abGNpNWtaV1poCmRXeDBMbk4yWXk1amJIVnpkR1Z5TG14dlkyRnNNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUJBUUNDTDFKeHJQU1QKQW9Ea1l2R1JoZHlwOXJFb1ZuTlZGMkRqRlNEMThTUTVTUERMdUlyRmhKTWFnMWZramZ0Y1ROdGJIQko0NVcvRgoxcFRYUnRkbUYzQUtwNGlCOXJsYVZJZk9xaUdPYWRZMU9IMk44TURTV2NUemxsMGtyN2JURm1FMlZnYXFrUlVaCmR5SERFS3dJQ0x5MnpHM0xYQlFxNG5OUU16dDdrY0VlMXVXVy9qb0JUZXdCVy90YjVXWUh0K1NzZHJucm9abDAKMVQrNVltRlNTWXc5YnU3Q3l4V21rNnROWDl1emV2UEpZTlhFdFlEWHBoMmRiUE0vUnIwQXdsVWxmWGRRcEd6awpybjVwelZyZW43YzJNYlpYSDd3azNxR3RnbXF3b1lVODExUTJ2cWR2bXI4dDl0c2NWM1NlOEkwNGI3V09xQ040CnV0STluajhKU3ZaegotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+            "tls.key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb1FJQkFBS0NBUUVBdkhSMjlNWWgvTmJZQjk1ZTd6dDdYUUMycFFqR1dxNTFRZVNTdkgwSXFYSXdpYzU4Ck5XcjZrTU15Q3JrWFJuR092WjdUYnk4M3p2QlBXY3owUi9oQThBaXJWNlVQWkpDYWxDeE5KMmd5WTlBMGZndHMKQVlKMUt2dlV1UFFLNi9lQk1QdXR6RzVUa2NQSFB5bytRUGJhNEl6MXBWVXNjcjY2TE5NZGVHRHYrcnYwRFNwSgpTOEV0dVZuUGVTTWRrcUtFbEFPcWpiamlJdmxoOGsxckV4aVNHd0VNUGtMM0pLeHZ3aGlUdnRmbmNmOUh5RmV2CkZieVNOUFpYSnJjdnJvemtBWElYYkJ2djFXNW5oWmZNemtTSXhWOTluNzFhY0txNElHaW5Ea1ZpelJWK2NtTTUKMFRCUHRFMUoxaWFlMTZucDJZcUQ5ME83dnNFZEdhL05lcThXV3dJREFRQUJBb0lCQUd5a0kzT215Uzh1VitucApXd2RGWGkvV1duUzNvMG5ocXYxcW5PRUduN2kzZUozcEtKZk83VllKQVU5SE50RElaRWFTU2tlZGkrbkRoYXM2ClNWVTRHNCtGSCtudDRQclRsaGwzbEo3MEphQi9CZFBvRjhLakI1TFpETi8yNkZqeUhVczB2QlBQUW1RVTNrZGUKdmZiTG1KQzlFbHZXeDBIN0MrOE5ZYjdrKzFPcWlzMCszQ1NlYlYxbVovK0ZCWFo0M0FwdnFKUHZUZkVzTE1SZAovdEpoVUFOZEl5SHh1bkp5RHFrNmYwekFGb0lPOTc1QjhtdDZ4clRLRGRCNnM2bzdxVzFUcUNPdExqT3JFckZYCnk3dlNwbUVXL1FHWjFSbFJ4RjhWcElEdkFRM2taMHUyTXZLWFZvWmVzSWNJSXhIMjhseS9UTHAxd2k3RFo3MUEKbVgrbkhja0NnWUVBN2dNS2xwNVViSnA5N2NjMStlWXFVRkxPOHUzamcvR3psUHpRVENyNlhTdjM5MUdmWVZOVwp3bTF2WHZVVUx6MWk3QktaeDY1Q1F6Q2NkejlIUFc4RWNDOHJYU25nZmRRSmVHZS9KVE5OY3VST2hjdVMzWXZvClg0Y2h0RnV2Tmx3ai9ucnZyTXBzenAyNjkzendnandVTnU4SkVadFZwNUE2NEhGczJYb2w0UGNDZ1lFQXlyS2QKanJwajJCekF6eW5ZajZNdk5EWkpCSXdLdU43NmlNOWp0M1RrbmFUUHN6cWZxb1lPMEdhYU9sZTYrOUkyL2dMbwpaQldqSUJqTlprWHVMaUNPNWdydHo2ZWNad1FXMXVXUCs1VGd1VUVsWE9UYzVITFN6TkFsOGdsVUFkQ1RRTEZLCldWZGhubkY5TWZSdmtGaVpJYzQ3Ylo0Yldkck40YjlZUHFNSUFMMENnWUF6dFZseGk0aFA1K2gvNWcybDh3a3kKVmlzN3Y4N3o5V2pNYjNoWmMrVGNwUmJFRm1tSDNYRTE0RXlYMXFyQjhKWXpMMzlWVUZoNC9IQ2h2NCtjbXlmZApyNEcrUmNETjFXa1JUWWpMYmkvZlRCWjdIdFVUYUxmZE9TQnJiSmZPT1lwZ1dSa0U4eDFjYmd3V2hJQkQ2d1dCClFjRTRvQVNsMk1IUnpSS1cxT0N4MVFLQmdRQ2dyWXhtS3V5ZzBOSXFwa0pNUXBCVnRENlhneWV3dXRraEFEMU0KblRYb25WQWtCSEd6TEVlci9kbCtMRE5HRWJLVUV0d0RFbi9ZSHJFYnhJMTFOVXZ4b1hJNGJPWjNadTl2OUZQNQptMSswbXFheWg1MXUzbktwOXNwTm5nVmcxdVVUb0RhT3NjenBXNDlodlNGKzdDeWZkcXIzVHlEaFRxaHJybEdXCmZZZ0hoUUovQ2xWWThZdlgvT1IwcDhSYkJEV1Fka0JGYUpSdUhsRXRGY2o3U2ZHb0FCS1k5Vzc4WnpEOFA5K20KMDU2dHVFQ2Yvc283aTNsd0E5K24vV0l1NGVFQitCRktVeUZ0NWNUR2lEWEJmSEdlWlFNUFdWZzR5bU5pN2o0dQphdVJpMEF6a0lwOW1KVjdXY2JRbE5FNHJIZ0pTMVVza3J5UHNlOEl3RFhyQnI1L213Zz09Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg=="
+        },
+        "kind": "Secret",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/part-of": "argocd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:data": {
+                            ".": {},
+                            "f:admin.password": {},
+                            "f:admin.passwordMtime": {},
+                            "f:clearPassword": {}
+                        },
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/part-of": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:type": {}
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                },
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:data": {
+                            "f:server.secretkey": {},
+                            "f:tls.crt": {},
+                            "f:tls.key": {}
+                        }
+                    },
+                    "manager": "argocd-server",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:16:31Z"
+                }
+            ],
+            "name": "argocd-secret",
+            "namespace": "default",
+            "resourceVersion": "88695",
+            "uid": "5625dc3b-a917-4beb-8849-8241ecb7a24f"
+        },
+        "type": "Opaque"
+    },
+    {
+        "apiVersion": "v1",
+        "data": {
+            "master.conf": "dir /data\n# User-supplied master configuration:\nrename-command FLUSHDB \"\"\nrename-command FLUSHALL \"\"\n# End of master configuration",
+            "redis.conf": "# User-supplied common configuration:\n# Enable AOF https://redis.io/topics/persistence#append-only-file\nappendonly yes\n# Disable RDB persistence, AOF persistence already enabled.\nsave \"\"\n# End of common configuration",
+            "replica.conf": "dir /data\n# User-supplied replica configuration:\nrename-command FLUSHDB \"\"\nrename-command FLUSHALL \"\"\n# End of replica configuration"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "app.kubernetes.io/version": "7.2.2",
+                "helm.sh/chart": "redis-18.1.6"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:data": {
+                            ".": {},
+                            "f:master.conf": {},
+                            "f:redis.conf": {},
+                            "f:replica.conf": {}
+                        },
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-redis-configuration",
+            "namespace": "default",
+            "resourceVersion": "88309",
+            "uid": "eb4fc076-365c-4304-b7ed-9786fc825c64"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "data": {
+            "ping_liveness_local.sh": "#!/bin/bash\n\n[[ -f $REDIS_PASSWORD_FILE ]] \u0026\u0026 export REDIS_PASSWORD=\"$(\u003c \"${REDIS_PASSWORD_FILE}\")\"\n[[ -n \"$REDIS_PASSWORD\" ]] \u0026\u0026 export REDISCLI_AUTH=\"$REDIS_PASSWORD\"\nresponse=$(\n  timeout -s 15 $1 \\\n  redis-cli \\\n    -h localhost \\\n    -p $REDIS_PORT \\\n    ping\n)\nif [ \"$?\" -eq \"124\" ]; then\n  echo \"Timed out\"\n  exit 1\nfi\nresponseFirstWord=$(echo $response | head -n1 | awk '{print $1;}')\nif [ \"$response\" != \"PONG\" ] \u0026\u0026 [ \"$responseFirstWord\" != \"LOADING\" ] \u0026\u0026 [ \"$responseFirstWord\" != \"MASTERDOWN\" ]; then\n  echo \"$response\"\n  exit 1\nfi",
+            "ping_liveness_local_and_master.sh": "script_dir=\"$(dirname \"$0\")\"\nexit_status=0\n\"$script_dir/ping_liveness_local.sh\" $1 || exit_status=$?\n\"$script_dir/ping_liveness_master.sh\" $1 || exit_status=$?\nexit $exit_status",
+            "ping_liveness_master.sh": "#!/bin/bash\n\n[[ -f $REDIS_MASTER_PASSWORD_FILE ]] \u0026\u0026 export REDIS_MASTER_PASSWORD=\"$(\u003c \"${REDIS_MASTER_PASSWORD_FILE}\")\"\n[[ -n \"$REDIS_MASTER_PASSWORD\" ]] \u0026\u0026 export REDISCLI_AUTH=\"$REDIS_MASTER_PASSWORD\"\nresponse=$(\n  timeout -s 15 $1 \\\n  redis-cli \\\n    -h $REDIS_MASTER_HOST \\\n    -p $REDIS_MASTER_PORT_NUMBER \\\n    ping\n)\nif [ \"$?\" -eq \"124\" ]; then\n  echo \"Timed out\"\n  exit 1\nfi\nresponseFirstWord=$(echo $response | head -n1 | awk '{print $1;}')\nif [ \"$response\" != \"PONG\" ] \u0026\u0026 [ \"$responseFirstWord\" != \"LOADING\" ]; then\n  echo \"$response\"\n  exit 1\nfi",
+            "ping_readiness_local.sh": "#!/bin/bash\n\n[[ -f $REDIS_PASSWORD_FILE ]] \u0026\u0026 export REDIS_PASSWORD=\"$(\u003c \"${REDIS_PASSWORD_FILE}\")\"\n[[ -n \"$REDIS_PASSWORD\" ]] \u0026\u0026 export REDISCLI_AUTH=\"$REDIS_PASSWORD\"\nresponse=$(\n  timeout -s 15 $1 \\\n  redis-cli \\\n    -h localhost \\\n    -p $REDIS_PORT \\\n    ping\n)\nif [ \"$?\" -eq \"124\" ]; then\n  echo \"Timed out\"\n  exit 1\nfi\nif [ \"$response\" != \"PONG\" ]; then\n  echo \"$response\"\n  exit 1\nfi",
+            "ping_readiness_local_and_master.sh": "script_dir=\"$(dirname \"$0\")\"\nexit_status=0\n\"$script_dir/ping_readiness_local.sh\" $1 || exit_status=$?\n\"$script_dir/ping_readiness_master.sh\" $1 || exit_status=$?\nexit $exit_status",
+            "ping_readiness_master.sh": "#!/bin/bash\n\n[[ -f $REDIS_MASTER_PASSWORD_FILE ]] \u0026\u0026 export REDIS_MASTER_PASSWORD=\"$(\u003c \"${REDIS_MASTER_PASSWORD_FILE}\")\"\n[[ -n \"$REDIS_MASTER_PASSWORD\" ]] \u0026\u0026 export REDISCLI_AUTH=\"$REDIS_MASTER_PASSWORD\"\nresponse=$(\n  timeout -s 15 $1 \\\n  redis-cli \\\n    -h $REDIS_MASTER_HOST \\\n    -p $REDIS_MASTER_PORT_NUMBER \\\n    ping\n)\nif [ \"$?\" -eq \"124\" ]; then\n  echo \"Timed out\"\n  exit 1\nfi\nif [ \"$response\" != \"PONG\" ]; then\n  echo \"$response\"\n  exit 1\nfi"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "app.kubernetes.io/version": "7.2.2",
+                "helm.sh/chart": "redis-18.1.6"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:data": {
+                            ".": {},
+                            "f:ping_liveness_local.sh": {},
+                            "f:ping_liveness_local_and_master.sh": {},
+                            "f:ping_liveness_master.sh": {},
+                            "f:ping_readiness_local.sh": {},
+                            "f:ping_readiness_local_and_master.sh": {},
+                            "f:ping_readiness_master.sh": {}
+                        },
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-redis-health",
+            "namespace": "default",
+            "resourceVersion": "88310",
+            "uid": "d719bc2a-4079-44f9-8e96-7e52a53f8d94"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "data": {
+            "start-master.sh": "#!/bin/bash\n\n[[ -f $REDIS_PASSWORD_FILE ]] \u0026\u0026 export REDIS_PASSWORD=\"$(\u003c \"${REDIS_PASSWORD_FILE}\")\"\nif [[ -f /opt/bitnami/redis/mounted-etc/master.conf ]];then\n    cp /opt/bitnami/redis/mounted-etc/master.conf /opt/bitnami/redis/etc/master.conf\nfi\nif [[ -f /opt/bitnami/redis/mounted-etc/redis.conf ]];then\n    cp /opt/bitnami/redis/mounted-etc/redis.conf /opt/bitnami/redis/etc/redis.conf\nfi\nARGS=(\"--port\" \"${REDIS_PORT}\")\nARGS+=(\"--requirepass\" \"${REDIS_PASSWORD}\")\nARGS+=(\"--masterauth\" \"${REDIS_PASSWORD}\")\nARGS+=(\"--include\" \"/opt/bitnami/redis/etc/redis.conf\")\nARGS+=(\"--include\" \"/opt/bitnami/redis/etc/master.conf\")\nexec redis-server \"${ARGS[@]}\"\n"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "app.kubernetes.io/version": "7.2.2",
+                "helm.sh/chart": "redis-18.1.6"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:data": {
+                            ".": {},
+                            "f:start-master.sh": {}
+                        },
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-redis-scripts",
+            "namespace": "default",
+            "resourceVersion": "88308",
+            "uid": "4a997112-2c2e-4443-b4a4-98d683db60ed"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "data": {
+            "application.instanceLabelKey": "argocd.argoproj.io/instance",
+            "dex.config": ""
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/part-of": "argocd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:data": {
+                            ".": {},
+                            "f:application.instanceLabelKey": {},
+                            "f:dex.config": {}
+                        },
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/part-of": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-cm",
+            "namespace": "default",
+            "resourceVersion": "88692",
+            "uid": "9498f83a-e146-4230-a4e9-cf64e00391e8"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "kind": "ConfigMap",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/part-of": "argocd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/part-of": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-gpg-keys-cm",
+            "namespace": "default",
+            "resourceVersion": "88307",
+            "uid": "41081ca9-5860-44ce-8dc3-fa068d4302b8"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "data": {
+            "ssh_known_hosts": "bitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\ngithub.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\ngitlab.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFSMqzJeV9rUzU4kWitGjeR4PWSa29SPqJ1fVkhtj3Hw9xjLVXVYrU9QlYWrOLXBpQ6KWjbjTDTdDkoohFzgbEY=\ngitlab.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAfuCHKVTjquxvt6CM6tdG4SLp1Btn/nOeHHE5UOzRdf\ngitlab.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsj2bNKTBSpIYDEGk9KxsGh3mySTRgMtXL583qmBpzeQ+jqCMRgBqB98u3z++J1sKlXHWfM9dyhSevkMwSbhoR8XIq/U0tCNyokEi/ueaBMCvbcTHhO7FcwzY92WK4Yt0aGROY5qX2UKSeOvuP4D6TPqKF1onrSzH9bx9XUf2lEdWT/ia1NEKjunUqu1xOB/StKDHMoX4/OKyIzuS0q/T1zOATthvasJFoPrAjkohTyaDUz2LN5JoH839hViyEG82yB+MjcFV5MU3N1l1QL3cVUCh93xSaua1N85qivl+siMkPGbO5xR/En4iEY6K2XPASUEMaieWVNTRCtJ4S8H+9\nssh.dev.azure.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Hr1oTWqNqOlzGJOfGJ4NakVyIzf1rXYd4d7wo6jBlkLvCA4odBlL0mDUyZ0/QUfTTqeu+tm22gOsv+VrVTMk6vwRU75gY/y9ut5Mb3bR5BV58dKXyq9A9UeB5Cakehn5Zgm6x1mKoVyf+FFn26iYqXJRgzIZZcZ5V6hrE0Qg39kZm4az48o0AUbf6Sp4SLdvnuMa2sVNwHBboS7EJkm57XQPVU3/QpyNLHbWDdzwtrlS+ez30S3AdYhLKEOxAG8weOnyrtLJAUen9mTkol8oII1edf7mWWbWVf0nBmly21+nZcmCTISQBtdcyPaEno7fFQMDD26/s0lfKob4Kw8H\nvs-ssh.visualstudio.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Hr1oTWqNqOlzGJOfGJ4NakVyIzf1rXYd4d7wo6jBlkLvCA4odBlL0mDUyZ0/QUfTTqeu+tm22gOsv+VrVTMk6vwRU75gY/y9ut5Mb3bR5BV58dKXyq9A9UeB5Cakehn5Zgm6x1mKoVyf+FFn26iYqXJRgzIZZcZ5V6hrE0Qg39kZm4az48o0AUbf6Sp4SLdvnuMa2sVNwHBboS7EJkm57XQPVU3/QpyNLHbWDdzwtrlS+ez30S3AdYhLKEOxAG8weOnyrtLJAUen9mTkol8oII1edf7mWWbWVf0nBmly21+nZcmCTISQBtdcyPaEno7fFQMDD26/s0lfKob4Kw8H\n"
+        },
+        "kind": "ConfigMap",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/part-of": "argocd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:data": {
+                            ".": {},
+                            "f:ssh_known_hosts": {}
+                        },
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/part-of": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-ssh-known-hosts-cm",
+            "namespace": "default",
+            "resourceVersion": "88312",
+            "uid": "4b3e3e5c-8df0-4bc3-af32-e6626353ac3e"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "kind": "ConfigMap",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/part-of": "argocd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/part-of": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-rbac-cm",
+            "namespace": "default",
+            "resourceVersion": "88311",
+            "uid": "c81d520e-3cb5-4a3e-a8e3-ebfa4f6887ec"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "kind": "ConfigMap",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/part-of": "argocd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/part-of": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-tls-certs-cm",
+            "namespace": "default",
+            "resourceVersion": "88306",
+            "uid": "46f69759-81a0-4552-af11-b3af1eab3f9c"
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "app.kubernetes.io/version": "7.2.2",
+                "helm.sh/chart": "redis-18.1.6"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:spec": {
+                            "f:clusterIP": {},
+                            "f:internalTrafficPolicy": {},
+                            "f:ports": {
+                                ".": {},
+                                "k:{\"port\":6379,\"protocol\":\"TCP\"}": {
+                                    ".": {},
+                                    "f:name": {},
+                                    "f:port": {},
+                                    "f:protocol": {},
+                                    "f:targetPort": {}
+                                }
+                            },
+                            "f:selector": {},
+                            "f:sessionAffinity": {},
+                            "f:type": {}
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-redis-headless",
+            "namespace": "default",
+            "resourceVersion": "88324",
+            "uid": "e49f5043-9288-4637-8be4-927bfacc2c6e"
+        },
+        "spec": {
+            "clusterIP": "None",
+            "clusterIPs": [
+                "None"
+            ],
+            "internalTrafficPolicy": "Cluster",
+            "ipFamilies": [
+                "IPv4"
+            ],
+            "ipFamilyPolicy": "SingleStack",
+            "ports": [
+                {
+                    "name": "tcp-redis",
+                    "port": 6379,
+                    "protocol": "TCP",
+                    "targetPort": "redis"
+                }
+            ],
+            "selector": {
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/name": "redis"
+            },
+            "sessionAffinity": "None",
+            "type": "ClusterIP"
+        },
+        "status": {
+            "loadBalancer": {}
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/component": "master",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "app.kubernetes.io/version": "7.2.2",
+                "helm.sh/chart": "redis-18.1.6"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:spec": {
+                            "f:internalTrafficPolicy": {},
+                            "f:ports": {
+                                ".": {},
+                                "k:{\"port\":6379,\"protocol\":\"TCP\"}": {
+                                    ".": {},
+                                    "f:name": {},
+                                    "f:port": {},
+                                    "f:protocol": {},
+                                    "f:targetPort": {}
+                                }
+                            },
+                            "f:selector": {},
+                            "f:sessionAffinity": {},
+                            "f:type": {}
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-redis-master",
+            "namespace": "default",
+            "resourceVersion": "88328",
+            "uid": "59351086-a3f7-42c2-bf6b-64da94964978"
+        },
+        "spec": {
+            "clusterIP": "10.245.58.67",
+            "clusterIPs": [
+                "10.245.58.67"
+            ],
+            "internalTrafficPolicy": "Cluster",
+            "ipFamilies": [
+                "IPv4"
+            ],
+            "ipFamilyPolicy": "SingleStack",
+            "ports": [
+                {
+                    "name": "tcp-redis",
+                    "port": 6379,
+                    "protocol": "TCP",
+                    "targetPort": "redis"
+                }
+            ],
+            "selector": {
+                "app.kubernetes.io/component": "master",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/name": "redis"
+            },
+            "sessionAffinity": "None",
+            "type": "ClusterIP"
+        },
+        "status": {
+            "loadBalancer": {}
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/component": "controller",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:spec": {
+                            "f:internalTrafficPolicy": {},
+                            "f:ports": {
+                                ".": {},
+                                "k:{\"port\":8082,\"protocol\":\"TCP\"}": {
+                                    ".": {},
+                                    "f:name": {},
+                                    "f:port": {},
+                                    "f:protocol": {},
+                                    "f:targetPort": {}
+                                }
+                            },
+                            "f:selector": {},
+                            "f:sessionAffinity": {},
+                            "f:type": {}
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-argo-cd-app-controller",
+            "namespace": "default",
+            "resourceVersion": "88326",
+            "uid": "7fc16dc1-5085-4034-a4b2-8f060b16a2e1"
+        },
+        "spec": {
+            "clusterIP": "10.245.7.174",
+            "clusterIPs": [
+                "10.245.7.174"
+            ],
+            "internalTrafficPolicy": "Cluster",
+            "ipFamilies": [
+                "IPv4"
+            ],
+            "ipFamilyPolicy": "SingleStack",
+            "ports": [
+                {
+                    "name": "tcp-controller",
+                    "port": 8082,
+                    "protocol": "TCP",
+                    "targetPort": "controller"
+                }
+            ],
+            "selector": {
+                "app.kubernetes.io/component": "controller",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/name": "argo-cd"
+            },
+            "sessionAffinity": "None",
+            "type": "ClusterIP"
+        },
+        "status": {
+            "loadBalancer": {}
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/component": "repo-server",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:spec": {
+                            "f:internalTrafficPolicy": {},
+                            "f:ports": {
+                                ".": {},
+                                "k:{\"port\":8081,\"protocol\":\"TCP\"}": {
+                                    ".": {},
+                                    "f:name": {},
+                                    "f:port": {},
+                                    "f:protocol": {},
+                                    "f:targetPort": {}
+                                }
+                            },
+                            "f:selector": {},
+                            "f:sessionAffinity": {},
+                            "f:type": {}
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-argo-cd-repo-server",
+            "namespace": "default",
+            "resourceVersion": "88331",
+            "uid": "368b4e25-4713-4f6b-896a-34e3149e6a3f"
+        },
+        "spec": {
+            "clusterIP": "10.245.58.176",
+            "clusterIPs": [
+                "10.245.58.176"
+            ],
+            "internalTrafficPolicy": "Cluster",
+            "ipFamilies": [
+                "IPv4"
+            ],
+            "ipFamilyPolicy": "SingleStack",
+            "ports": [
+                {
+                    "name": "tcp-repo-server",
+                    "port": 8081,
+                    "protocol": "TCP",
+                    "targetPort": "repo-server"
+                }
+            ],
+            "selector": {
+                "app.kubernetes.io/component": "repo-server",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/name": "argo-cd"
+            },
+            "sessionAffinity": "None",
+            "type": "ClusterIP"
+        },
+        "status": {
+            "loadBalancer": {}
+        }
+    },
+    {
+        "apiVersion": "v1",
+        "kind": "Service",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "labels": {
+                "app.kubernetes.io/component": "server",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:spec": {
+                            "f:internalTrafficPolicy": {},
+                            "f:ports": {
+                                ".": {},
+                                "k:{\"port\":443,\"protocol\":\"TCP\"}": {
+                                    ".": {},
+                                    "f:name": {},
+                                    "f:port": {},
+                                    "f:protocol": {},
+                                    "f:targetPort": {}
+                                },
+                                "k:{\"port\":80,\"protocol\":\"TCP\"}": {
+                                    ".": {},
+                                    "f:name": {},
+                                    "f:port": {},
+                                    "f:protocol": {},
+                                    "f:targetPort": {}
+                                }
+                            },
+                            "f:selector": {},
+                            "f:sessionAffinity": {},
+                            "f:type": {}
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                }
+            ],
+            "name": "argocd-argo-cd-server",
+            "namespace": "default",
+            "resourceVersion": "88338",
+            "uid": "a50587e5-f268-4f57-b6e9-637e8bb3bf15"
+        },
+        "spec": {
+            "clusterIP": "10.245.91.145",
+            "clusterIPs": [
+                "10.245.91.145"
+            ],
+            "internalTrafficPolicy": "Cluster",
+            "ipFamilies": [
+                "IPv4"
+            ],
+            "ipFamilyPolicy": "SingleStack",
+            "ports": [
+                {
+                    "name": "http",
+                    "port": 80,
+                    "protocol": "TCP",
+                    "targetPort": "http"
+                },
+                {
+                    "name": "https",
+                    "port": 443,
+                    "protocol": "TCP",
+                    "targetPort": "http"
+                }
+            ],
+            "selector": {
+                "app.kubernetes.io/component": "server",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/name": "argo-cd"
+            },
+            "sessionAffinity": "None",
+            "type": "ClusterIP"
+        },
+        "status": {
+            "loadBalancer": {}
+        }
+    },
+    {
+        "apiVersion": "apps/v1",
+        "kind": "Deployment",
+        "metadata": {
+            "annotations": {
+                "deployment.kubernetes.io/revision": "1",
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "generation": 1,
+            "labels": {
+                "app.kubernetes.io/component": "controller",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "name": "argocd-argo-cd-app-controller",
+            "namespace": "default",
+            "resourceVersion": "88751",
+            "uid": "9533a453-decd-437f-949b-e086ae1b359f"
+        },
+        "spec": {
+            "progressDeadlineSeconds": 600,
+            "replicas": 1,
+            "revisionHistoryLimit": 10,
+            "selector": {
+                "matchLabels": {
+                    "app.kubernetes.io/component": "controller",
+                    "app.kubernetes.io/instance": "argocd",
+                    "app.kubernetes.io/name": "argo-cd"
+                }
+            },
+            "strategy": {
+                "rollingUpdate": {
+                    "maxSurge": "25%",
+                    "maxUnavailable": "25%"
+                },
+                "type": "RollingUpdate"
+            },
+            "template": {
+                "metadata": {
+                    "creationTimestamp": null,
+                    "labels": {
+                        "app.kubernetes.io/component": "controller",
+                        "app.kubernetes.io/instance": "argocd",
+                        "app.kubernetes.io/managed-by": "Helm",
+                        "app.kubernetes.io/name": "argo-cd",
+                        "app.kubernetes.io/version": "2.8.4",
+                        "helm.sh/chart": "argo-cd-5.1.16"
+                    }
+                },
+                "spec": {
+                    "affinity": {
+                        "podAntiAffinity": {
+                            "preferredDuringSchedulingIgnoredDuringExecution": [
+                                {
+                                    "podAffinityTerm": {
+                                        "labelSelector": {
+                                            "matchLabels": {
+                                                "app.kubernetes.io/component": "controller",
+                                                "app.kubernetes.io/instance": "argocd",
+                                                "app.kubernetes.io/name": "argo-cd"
+                                            }
+                                        },
+                                        "topologyKey": "kubernetes.io/hostname"
+                                    },
+                                    "weight": 1
+                                }
+                            ]
+                        }
+                    },
+                    "containers": [
+                        {
+                            "args": [
+                                "argocd-application-controller",
+                                "--status-processors",
+                                "20",
+                                "--operation-processors",
+                                "10",
+                                "--app-resync",
+                                "180",
+                                "--self-heal-timeout-seconds",
+                                "5",
+                                "--repo-server",
+                                "argocd-argo-cd-repo-server:8081",
+                                "--logformat",
+                                "text",
+                                "--loglevel",
+                                "info",
+                                "--redis",
+                                "argocd-redis-master:6379"
+                            ],
+                            "env": [
+                                {
+                                    "name": "REDIS_PASSWORD",
+                                    "valueFrom": {
+                                        "secretKeyRef": {
+                                            "key": "redis-password",
+                                            "name": "argocd-redis"
+                                        }
+                                    }
+                                }
+                            ],
+                            "image": "docker.io/bitnami/argo-cd:2.8.4-debian-11-r18",
+                            "imagePullPolicy": "IfNotPresent",
+                            "livenessProbe": {
+                                "failureThreshold": 3,
+                                "httpGet": {
+                                    "path": "/healthz",
+                                    "port": 8082,
+                                    "scheme": "HTTP"
+                                },
+                                "initialDelaySeconds": 10,
+                                "periodSeconds": 10,
+                                "successThreshold": 1,
+                                "timeoutSeconds": 1
+                            },
+                            "name": "controller",
+                            "ports": [
+                                {
+                                    "containerPort": 8082,
+                                    "name": "controller",
+                                    "protocol": "TCP"
+                                },
+                                {
+                                    "containerPort": 8082,
+                                    "name": "metrics",
+                                    "protocol": "TCP"
+                                }
+                            ],
+                            "readinessProbe": {
+                                "failureThreshold": 3,
+                                "initialDelaySeconds": 10,
+                                "periodSeconds": 10,
+                                "successThreshold": 1,
+                                "tcpSocket": {
+                                    "port": 8082
+                                },
+                                "timeoutSeconds": 1
+                            },
+                            "resources": {},
+                            "securityContext": {
+                                "allowPrivilegeEscalation": false,
+                                "capabilities": {
+                                    "drop": [
+                                        "all"
+                                    ]
+                                },
+                                "readOnlyRootFilesystem": false,
+                                "runAsNonRoot": true,
+                                "runAsUser": 1001
+                            },
+                            "terminationMessagePath": "/dev/termination-log",
+                            "terminationMessagePolicy": "File",
+                            "volumeMounts": [
+                                {
+                                    "mountPath": "/app/config/server/tls",
+                                    "name": "argocd-repo-server-tls"
+                                }
+                            ]
+                        }
+                    ],
+                    "dnsPolicy": "ClusterFirst",
+                    "initContainers": [
+                        {
+                            "args": [
+                                "-ec",
+                                "#!/bin/bash\n\nset -o errexit\nset -o nounset\nset -o pipefail\n\n. /opt/bitnami/scripts/libos.sh\n. /opt/bitnami/scripts/liblog.sh\n\ncheck_redis_connection() {\n  local result=\"$(redis-cli -h argocd-redis-master -p 6379  PING)\"\n  if [[ \"$result\" != \"PONG\" ]]; then\n    false\n  fi\n}\n\ninfo \"Checking redis connection...\"\nif ! retry_while \"check_redis_connection\"; then\n    error \"Could not connect to the Redis server\"\n    return 1\nelse\n    info \"Connected to the Redis instance\"\nfi\n"
+                            ],
+                            "command": [
+                                "/bin/bash"
+                            ],
+                            "env": [
+                                {
+                                    "name": "REDISCLI_AUTH",
+                                    "valueFrom": {
+                                        "secretKeyRef": {
+                                            "key": "redis-password",
+                                            "name": "argocd-redis"
+                                        }
+                                    }
+                                }
+                            ],
+                            "image": "docker.io/bitnami/redis:7.2.2-debian-11-r0",
+                            "imagePullPolicy": "IfNotPresent",
+                            "name": "wait-for-redis",
+                            "resources": {},
+                            "terminationMessagePath": "/dev/termination-log",
+                            "terminationMessagePolicy": "File"
+                        }
+                    ],
+                    "restartPolicy": "Always",
+                    "schedulerName": "default-scheduler",
+                    "securityContext": {
+                        "fsGroup": 1001
+                    },
+                    "serviceAccount": "argocd-argo-cd-argocd-app-controller",
+                    "serviceAccountName": "argocd-argo-cd-argocd-app-controller",
+                    "terminationGracePeriodSeconds": 30,
+                    "volumes": [
+                        {
+                            "name": "argocd-repo-server-tls",
+                            "secret": {
+                                "defaultMode": 420,
+                                "items": [
+                                    {
+                                        "key": "tls.crt",
+                                        "path": "tls.crt"
+                                    },
+                                    {
+                                        "key": "tls.key",
+                                        "path": "tls.key"
+                                    },
+                                    {
+                                        "key": "ca.crt",
+                                        "path": "ca.crt"
+                                    }
+                                ],
+                                "optional": true,
+                                "secretName": "argocd-repo-server-tls"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "status": {
+            "availableReplicas": 1,
+            "conditions": [
+                {
+                    "lastTransitionTime": "2023-10-26T17:16:43Z",
+                    "lastUpdateTime": "2023-10-26T17:16:43Z",
+                    "message": "Deployment has minimum availability.",
+                    "reason": "MinimumReplicasAvailable",
+                    "status": "True",
+                    "type": "Available"
+                },
+                {
+                    "lastTransitionTime": "2023-10-26T17:15:33Z",
+                    "lastUpdateTime": "2023-10-26T17:16:43Z",
+                    "message": "ReplicaSet \"argocd-argo-cd-app-controller-7cb7fdc47b\" has successfully progressed.",
+                    "reason": "NewReplicaSetAvailable",
+                    "status": "True",
+                    "type": "Progressing"
+                }
+            ],
+            "observedGeneration": 1,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updatedReplicas": 1
+        }
+    },
+    {
+        "apiVersion": "apps/v1",
+        "kind": "Deployment",
+        "metadata": {
+            "annotations": {
+                "deployment.kubernetes.io/revision": "1",
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "generation": 1,
+            "labels": {
+                "app.kubernetes.io/component": "repo-server",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "apps/v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:spec": {
+                            "f:progressDeadlineSeconds": {},
+                            "f:replicas": {},
+                            "f:revisionHistoryLimit": {},
+                            "f:selector": {},
+                            "f:strategy": {
+                                "f:rollingUpdate": {
+                                    ".": {},
+                                    "f:maxSurge": {},
+                                    "f:maxUnavailable": {}
+                                },
+                                "f:type": {}
+                            },
+                            "f:template": {
+                                "f:metadata": {
+                                    "f:labels": {
+                                        ".": {},
+                                        "f:app.kubernetes.io/component": {},
+                                        "f:app.kubernetes.io/instance": {},
+                                        "f:app.kubernetes.io/managed-by": {},
+                                        "f:app.kubernetes.io/name": {},
+                                        "f:app.kubernetes.io/version": {},
+                                        "f:helm.sh/chart": {}
+                                    }
+                                },
+                                "f:spec": {
+                                    "f:affinity": {
+                                        ".": {},
+                                        "f:podAntiAffinity": {
+                                            ".": {},
+                                            "f:preferredDuringSchedulingIgnoredDuringExecution": {}
+                                        }
+                                    },
+                                    "f:containers": {
+                                        "k:{\"name\":\"argocd-repo-server\"}": {
+                                            ".": {},
+                                            "f:args": {},
+                                            "f:env": {
+                                                ".": {},
+                                                "k:{\"name\":\"REDIS_PASSWORD\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:valueFrom": {
+                                                        ".": {},
+                                                        "f:secretKeyRef": {}
+                                                    }
+                                                }
+                                            },
+                                            "f:image": {},
+                                            "f:imagePullPolicy": {},
+                                            "f:livenessProbe": {
+                                                ".": {},
+                                                "f:failureThreshold": {},
+                                                "f:initialDelaySeconds": {},
+                                                "f:periodSeconds": {},
+                                                "f:successThreshold": {},
+                                                "f:tcpSocket": {
+                                                    ".": {},
+                                                    "f:port": {}
+                                                },
+                                                "f:timeoutSeconds": {}
+                                            },
+                                            "f:name": {},
+                                            "f:ports": {
+                                                ".": {},
+                                                "k:{\"containerPort\":8081,\"protocol\":\"TCP\"}": {
+                                                    ".": {},
+                                                    "f:containerPort": {},
+                                                    "f:name": {},
+                                                    "f:protocol": {}
+                                                }
+                                            },
+                                            "f:readinessProbe": {
+                                                ".": {},
+                                                "f:failureThreshold": {},
+                                                "f:initialDelaySeconds": {},
+                                                "f:periodSeconds": {},
+                                                "f:successThreshold": {},
+                                                "f:tcpSocket": {
+                                                    ".": {},
+                                                    "f:port": {}
+                                                },
+                                                "f:timeoutSeconds": {}
+                                            },
+                                            "f:resources": {},
+                                            "f:securityContext": {
+                                                ".": {},
+                                                "f:allowPrivilegeEscalation": {},
+                                                "f:capabilities": {
+                                                    ".": {},
+                                                    "f:drop": {}
+                                                },
+                                                "f:readOnlyRootFilesystem": {},
+                                                "f:runAsNonRoot": {},
+                                                "f:runAsUser": {}
+                                            },
+                                            "f:terminationMessagePath": {},
+                                            "f:terminationMessagePolicy": {},
+                                            "f:volumeMounts": {
+                                                ".": {},
+                                                "k:{\"mountPath\":\"/app/config/gpg/keys\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                },
+                                                "k:{\"mountPath\":\"/app/config/server/tls\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                },
+                                                "k:{\"mountPath\":\"/app/config/ssh\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                },
+                                                "k:{\"mountPath\":\"/tmp\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "f:dnsPolicy": {},
+                                    "f:initContainers": {
+                                        ".": {},
+                                        "k:{\"name\":\"wait-for-redis\"}": {
+                                            ".": {},
+                                            "f:args": {},
+                                            "f:command": {},
+                                            "f:env": {
+                                                ".": {},
+                                                "k:{\"name\":\"REDISCLI_AUTH\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:valueFrom": {
+                                                        ".": {},
+                                                        "f:secretKeyRef": {}
+                                                    }
+                                                }
+                                            },
+                                            "f:image": {},
+                                            "f:imagePullPolicy": {},
+                                            "f:name": {},
+                                            "f:resources": {},
+                                            "f:terminationMessagePath": {},
+                                            "f:terminationMessagePolicy": {}
+                                        }
+                                    },
+                                    "f:restartPolicy": {},
+                                    "f:schedulerName": {},
+                                    "f:securityContext": {
+                                        ".": {},
+                                        "f:fsGroup": {}
+                                    },
+                                    "f:serviceAccount": {},
+                                    "f:serviceAccountName": {},
+                                    "f:terminationGracePeriodSeconds": {},
+                                    "f:volumes": {
+                                        ".": {},
+                                        "k:{\"name\":\"argocd-repo-server-tls\"}": {
+                                            ".": {},
+                                            "f:name": {},
+                                            "f:secret": {
+                                                ".": {},
+                                                "f:defaultMode": {},
+                                                "f:items": {},
+                                                "f:optional": {},
+                                                "f:secretName": {}
+                                            }
+                                        },
+                                        "k:{\"name\":\"gpg-keyring\"}": {
+                                            ".": {},
+                                            "f:emptyDir": {},
+                                            "f:name": {}
+                                        },
+                                        "k:{\"name\":\"ssh-known-hosts\"}": {
+                                            ".": {},
+                                            "f:configMap": {
+                                                ".": {},
+                                                "f:defaultMode": {},
+                                                "f:name": {}
+                                            },
+                                            "f:name": {}
+                                        },
+                                        "k:{\"name\":\"tmp-dir\"}": {
+                                            ".": {},
+                                            "f:emptyDir": {},
+                                            "f:name": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                },
+                {
+                    "apiVersion": "apps/v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                "f:deployment.kubernetes.io/revision": {}
+                            }
+                        },
+                        "f:status": {
+                            "f:availableReplicas": {},
+                            "f:conditions": {
+                                ".": {},
+                                "k:{\"type\":\"Available\"}": {
+                                    ".": {},
+                                    "f:lastTransitionTime": {},
+                                    "f:lastUpdateTime": {},
+                                    "f:message": {},
+                                    "f:reason": {},
+                                    "f:status": {},
+                                    "f:type": {}
+                                },
+                                "k:{\"type\":\"Progressing\"}": {
+                                    ".": {},
+                                    "f:lastTransitionTime": {},
+                                    "f:lastUpdateTime": {},
+                                    "f:message": {},
+                                    "f:reason": {},
+                                    "f:status": {},
+                                    "f:type": {}
+                                }
+                            },
+                            "f:observedGeneration": {},
+                            "f:readyReplicas": {},
+                            "f:replicas": {},
+                            "f:updatedReplicas": {}
+                        }
+                    },
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "subresource": "status",
+                    "time": "2023-10-26T17:16:43Z"
+                }
+            ],
+            "name": "argocd-argo-cd-repo-server",
+            "namespace": "default",
+            "resourceVersion": "88746",
+            "uid": "7b64e848-0e68-4f97-b8f7-0bc154101d6a"
+        },
+        "spec": {
+            "progressDeadlineSeconds": 600,
+            "replicas": 1,
+            "revisionHistoryLimit": 10,
+            "selector": {
+                "matchLabels": {
+                    "app.kubernetes.io/component": "repo-server",
+                    "app.kubernetes.io/instance": "argocd",
+                    "app.kubernetes.io/name": "argo-cd"
+                }
+            },
+            "strategy": {
+                "rollingUpdate": {
+                    "maxSurge": "25%",
+                    "maxUnavailable": "25%"
+                },
+                "type": "RollingUpdate"
+            },
+            "template": {
+                "metadata": {
+                    "creationTimestamp": null,
+                    "labels": {
+                        "app.kubernetes.io/component": "repo-server",
+                        "app.kubernetes.io/instance": "argocd",
+                        "app.kubernetes.io/managed-by": "Helm",
+                        "app.kubernetes.io/name": "argo-cd",
+                        "app.kubernetes.io/version": "2.8.4",
+                        "helm.sh/chart": "argo-cd-5.1.16"
+                    }
+                },
+                "spec": {
+                    "affinity": {
+                        "podAntiAffinity": {
+                            "preferredDuringSchedulingIgnoredDuringExecution": [
+                                {
+                                    "podAffinityTerm": {
+                                        "labelSelector": {
+                                            "matchLabels": {
+                                                "app.kubernetes.io/component": "repo-server",
+                                                "app.kubernetes.io/instance": "argocd",
+                                                "app.kubernetes.io/name": "argo-cd"
+                                            }
+                                        },
+                                        "topologyKey": "kubernetes.io/hostname"
+                                    },
+                                    "weight": 1
+                                }
+                            ]
+                        }
+                    },
+                    "containers": [
+                        {
+                            "args": [
+                                "argocd-repo-server",
+                                "--logformat",
+                                "text",
+                                "--loglevel",
+                                "info",
+                                "--redis",
+                                "argocd-redis-master:6379"
+                            ],
+                            "env": [
+                                {
+                                    "name": "REDIS_PASSWORD",
+                                    "valueFrom": {
+                                        "secretKeyRef": {
+                                            "key": "redis-password",
+                                            "name": "argocd-redis"
+                                        }
+                                    }
+                                }
+                            ],
+                            "image": "docker.io/bitnami/argo-cd:2.8.4-debian-11-r18",
+                            "imagePullPolicy": "IfNotPresent",
+                            "livenessProbe": {
+                                "failureThreshold": 3,
+                                "initialDelaySeconds": 10,
+                                "periodSeconds": 10,
+                                "successThreshold": 1,
+                                "tcpSocket": {
+                                    "port": 8081
+                                },
+                                "timeoutSeconds": 1
+                            },
+                            "name": "argocd-repo-server",
+                            "ports": [
+                                {
+                                    "containerPort": 8081,
+                                    "name": "repo-server",
+                                    "protocol": "TCP"
+                                }
+                            ],
+                            "readinessProbe": {
+                                "failureThreshold": 3,
+                                "initialDelaySeconds": 10,
+                                "periodSeconds": 10,
+                                "successThreshold": 1,
+                                "tcpSocket": {
+                                    "port": 8081
+                                },
+                                "timeoutSeconds": 1
+                            },
+                            "resources": {},
+                            "securityContext": {
+                                "allowPrivilegeEscalation": false,
+                                "capabilities": {
+                                    "drop": [
+                                        "all"
+                                    ]
+                                },
+                                "readOnlyRootFilesystem": false,
+                                "runAsNonRoot": true,
+                                "runAsUser": 1001
+                            },
+                            "terminationMessagePath": "/dev/termination-log",
+                            "terminationMessagePolicy": "File",
+                            "volumeMounts": [
+                                {
+                                    "mountPath": "/app/config/ssh",
+                                    "name": "ssh-known-hosts"
+                                },
+                                {
+                                    "mountPath": "/app/config/server/tls",
+                                    "name": "argocd-repo-server-tls"
+                                },
+                                {
+                                    "mountPath": "/app/config/gpg/keys",
+                                    "name": "gpg-keyring"
+                                },
+                                {
+                                    "mountPath": "/tmp",
+                                    "name": "tmp-dir"
+                                }
+                            ]
+                        }
+                    ],
+                    "dnsPolicy": "ClusterFirst",
+                    "initContainers": [
+                        {
+                            "args": [
+                                "-ec",
+                                "#!/bin/bash\n\nset -o errexit\nset -o nounset\nset -o pipefail\n\n. /opt/bitnami/scripts/libos.sh\n. /opt/bitnami/scripts/liblog.sh\n\ncheck_redis_connection() {\n  local result=\"$(redis-cli -h argocd-redis-master -p 6379  PING)\"\n  if [[ \"$result\" != \"PONG\" ]]; then\n    false\n  fi\n}\n\ninfo \"Checking redis connection...\"\nif ! retry_while \"check_redis_connection\"; then\n    error \"Could not connect to the Redis server\"\n    return 1\nelse\n    info \"Connected to the Redis instance\"\nfi\n"
+                            ],
+                            "command": [
+                                "/bin/bash"
+                            ],
+                            "env": [
+                                {
+                                    "name": "REDISCLI_AUTH",
+                                    "valueFrom": {
+                                        "secretKeyRef": {
+                                            "key": "redis-password",
+                                            "name": "argocd-redis"
+                                        }
+                                    }
+                                }
+                            ],
+                            "image": "docker.io/bitnami/redis:7.2.2-debian-11-r0",
+                            "imagePullPolicy": "IfNotPresent",
+                            "name": "wait-for-redis",
+                            "resources": {},
+                            "terminationMessagePath": "/dev/termination-log",
+                            "terminationMessagePolicy": "File"
+                        }
+                    ],
+                    "restartPolicy": "Always",
+                    "schedulerName": "default-scheduler",
+                    "securityContext": {
+                        "fsGroup": 1001
+                    },
+                    "serviceAccount": "argocd-argo-cd-argocd-repo-server",
+                    "serviceAccountName": "argocd-argo-cd-argocd-repo-server",
+                    "terminationGracePeriodSeconds": 30,
+                    "volumes": [
+                        {
+                            "configMap": {
+                                "defaultMode": 420,
+                                "name": "argocd-ssh-known-hosts-cm"
+                            },
+                            "name": "ssh-known-hosts"
+                        },
+                        {
+                            "name": "argocd-repo-server-tls",
+                            "secret": {
+                                "defaultMode": 420,
+                                "items": [
+                                    {
+                                        "key": "tls.crt",
+                                        "path": "tls.crt"
+                                    },
+                                    {
+                                        "key": "tls.key",
+                                        "path": "tls.key"
+                                    },
+                                    {
+                                        "key": "ca.crt",
+                                        "path": "ca.crt"
+                                    }
+                                ],
+                                "optional": true,
+                                "secretName": "argocd-repo-server-tls"
+                            }
+                        },
+                        {
+                            "emptyDir": {},
+                            "name": "tmp-dir"
+                        },
+                        {
+                            "emptyDir": {},
+                            "name": "gpg-keyring"
+                        }
+                    ]
+                }
+            }
+        },
+        "status": {
+            "availableReplicas": 1,
+            "conditions": [
+                {
+                    "lastTransitionTime": "2023-10-26T17:16:43Z",
+                    "lastUpdateTime": "2023-10-26T17:16:43Z",
+                    "message": "Deployment has minimum availability.",
+                    "reason": "MinimumReplicasAvailable",
+                    "status": "True",
+                    "type": "Available"
+                },
+                {
+                    "lastTransitionTime": "2023-10-26T17:15:33Z",
+                    "lastUpdateTime": "2023-10-26T17:16:43Z",
+                    "message": "ReplicaSet \"argocd-argo-cd-repo-server-5d8c577448\" has successfully progressed.",
+                    "reason": "NewReplicaSetAvailable",
+                    "status": "True",
+                    "type": "Progressing"
+                }
+            ],
+            "observedGeneration": 1,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updatedReplicas": 1
+        }
+    },
+    {
+        "apiVersion": "apps/v1",
+        "kind": "Deployment",
+        "metadata": {
+            "annotations": {
+                "deployment.kubernetes.io/revision": "1",
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "generation": 1,
+            "labels": {
+                "app.kubernetes.io/component": "server",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "argo-cd",
+                "app.kubernetes.io/version": "2.8.4",
+                "helm.sh/chart": "argo-cd-5.1.16"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "apps/v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:spec": {
+                            "f:progressDeadlineSeconds": {},
+                            "f:replicas": {},
+                            "f:revisionHistoryLimit": {},
+                            "f:selector": {},
+                            "f:strategy": {
+                                "f:rollingUpdate": {
+                                    ".": {},
+                                    "f:maxSurge": {},
+                                    "f:maxUnavailable": {}
+                                },
+                                "f:type": {}
+                            },
+                            "f:template": {
+                                "f:metadata": {
+                                    "f:labels": {
+                                        ".": {},
+                                        "f:app.kubernetes.io/component": {},
+                                        "f:app.kubernetes.io/instance": {},
+                                        "f:app.kubernetes.io/managed-by": {},
+                                        "f:app.kubernetes.io/name": {},
+                                        "f:app.kubernetes.io/version": {},
+                                        "f:helm.sh/chart": {}
+                                    }
+                                },
+                                "f:spec": {
+                                    "f:affinity": {
+                                        ".": {},
+                                        "f:podAntiAffinity": {
+                                            ".": {},
+                                            "f:preferredDuringSchedulingIgnoredDuringExecution": {}
+                                        }
+                                    },
+                                    "f:containers": {
+                                        "k:{\"name\":\"argocd-server\"}": {
+                                            ".": {},
+                                            "f:args": {},
+                                            "f:env": {
+                                                ".": {},
+                                                "k:{\"name\":\"REDIS_PASSWORD\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:valueFrom": {
+                                                        ".": {},
+                                                        "f:secretKeyRef": {}
+                                                    }
+                                                }
+                                            },
+                                            "f:image": {},
+                                            "f:imagePullPolicy": {},
+                                            "f:livenessProbe": {
+                                                ".": {},
+                                                "f:failureThreshold": {},
+                                                "f:httpGet": {
+                                                    ".": {},
+                                                    "f:path": {},
+                                                    "f:port": {},
+                                                    "f:scheme": {}
+                                                },
+                                                "f:initialDelaySeconds": {},
+                                                "f:periodSeconds": {},
+                                                "f:successThreshold": {},
+                                                "f:timeoutSeconds": {}
+                                            },
+                                            "f:name": {},
+                                            "f:ports": {
+                                                ".": {},
+                                                "k:{\"containerPort\":8080,\"protocol\":\"TCP\"}": {
+                                                    ".": {},
+                                                    "f:containerPort": {},
+                                                    "f:name": {},
+                                                    "f:protocol": {}
+                                                }
+                                            },
+                                            "f:readinessProbe": {
+                                                ".": {},
+                                                "f:failureThreshold": {},
+                                                "f:httpGet": {
+                                                    ".": {},
+                                                    "f:path": {},
+                                                    "f:port": {},
+                                                    "f:scheme": {}
+                                                },
+                                                "f:initialDelaySeconds": {},
+                                                "f:periodSeconds": {},
+                                                "f:successThreshold": {},
+                                                "f:timeoutSeconds": {}
+                                            },
+                                            "f:resources": {},
+                                            "f:securityContext": {
+                                                ".": {},
+                                                "f:allowPrivilegeEscalation": {},
+                                                "f:capabilities": {
+                                                    ".": {},
+                                                    "f:drop": {}
+                                                },
+                                                "f:readOnlyRootFilesystem": {},
+                                                "f:runAsNonRoot": {},
+                                                "f:runAsUser": {}
+                                            },
+                                            "f:terminationMessagePath": {},
+                                            "f:terminationMessagePolicy": {},
+                                            "f:volumeMounts": {
+                                                ".": {},
+                                                "k:{\"mountPath\":\"/app/config/server/tls\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                },
+                                                "k:{\"mountPath\":\"/app/config/ssh\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "f:dnsPolicy": {},
+                                    "f:initContainers": {
+                                        ".": {},
+                                        "k:{\"name\":\"wait-for-redis\"}": {
+                                            ".": {},
+                                            "f:args": {},
+                                            "f:command": {},
+                                            "f:env": {
+                                                ".": {},
+                                                "k:{\"name\":\"REDISCLI_AUTH\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:valueFrom": {
+                                                        ".": {},
+                                                        "f:secretKeyRef": {}
+                                                    }
+                                                }
+                                            },
+                                            "f:image": {},
+                                            "f:imagePullPolicy": {},
+                                            "f:name": {},
+                                            "f:resources": {},
+                                            "f:terminationMessagePath": {},
+                                            "f:terminationMessagePolicy": {}
+                                        }
+                                    },
+                                    "f:restartPolicy": {},
+                                    "f:schedulerName": {},
+                                    "f:securityContext": {
+                                        ".": {},
+                                        "f:fsGroup": {}
+                                    },
+                                    "f:serviceAccount": {},
+                                    "f:serviceAccountName": {},
+                                    "f:terminationGracePeriodSeconds": {},
+                                    "f:volumes": {
+                                        ".": {},
+                                        "k:{\"name\":\"argocd-repo-server-tls\"}": {
+                                            ".": {},
+                                            "f:name": {},
+                                            "f:secret": {
+                                                ".": {},
+                                                "f:defaultMode": {},
+                                                "f:items": {},
+                                                "f:optional": {},
+                                                "f:secretName": {}
+                                            }
+                                        },
+                                        "k:{\"name\":\"ssh-known-hosts\"}": {
+                                            ".": {},
+                                            "f:configMap": {
+                                                ".": {},
+                                                "f:defaultMode": {},
+                                                "f:name": {}
+                                            },
+                                            "f:name": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                },
+                {
+                    "apiVersion": "apps/v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                "f:deployment.kubernetes.io/revision": {}
+                            }
+                        },
+                        "f:status": {
+                            "f:availableReplicas": {},
+                            "f:conditions": {
+                                ".": {},
+                                "k:{\"type\":\"Available\"}": {
+                                    ".": {},
+                                    "f:lastTransitionTime": {},
+                                    "f:lastUpdateTime": {},
+                                    "f:message": {},
+                                    "f:reason": {},
+                                    "f:status": {},
+                                    "f:type": {}
+                                },
+                                "k:{\"type\":\"Progressing\"}": {
+                                    ".": {},
+                                    "f:lastTransitionTime": {},
+                                    "f:lastUpdateTime": {},
+                                    "f:message": {},
+                                    "f:reason": {},
+                                    "f:status": {},
+                                    "f:type": {}
+                                }
+                            },
+                            "f:observedGeneration": {},
+                            "f:readyReplicas": {},
+                            "f:replicas": {},
+                            "f:updatedReplicas": {}
+                        }
+                    },
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "subresource": "status",
+                    "time": "2023-10-26T17:16:43Z"
+                }
+            ],
+            "name": "argocd-argo-cd-server",
+            "namespace": "default",
+            "resourceVersion": "88757",
+            "uid": "afd3451a-f86d-4482-815b-3941efb2cc28"
+        },
+        "spec": {
+            "progressDeadlineSeconds": 600,
+            "replicas": 1,
+            "revisionHistoryLimit": 10,
+            "selector": {
+                "matchLabels": {
+                    "app.kubernetes.io/component": "server",
+                    "app.kubernetes.io/instance": "argocd",
+                    "app.kubernetes.io/name": "argo-cd"
+                }
+            },
+            "strategy": {
+                "rollingUpdate": {
+                    "maxSurge": "25%",
+                    "maxUnavailable": "25%"
+                },
+                "type": "RollingUpdate"
+            },
+            "template": {
+                "metadata": {
+                    "creationTimestamp": null,
+                    "labels": {
+                        "app.kubernetes.io/component": "server",
+                        "app.kubernetes.io/instance": "argocd",
+                        "app.kubernetes.io/managed-by": "Helm",
+                        "app.kubernetes.io/name": "argo-cd",
+                        "app.kubernetes.io/version": "2.8.4",
+                        "helm.sh/chart": "argo-cd-5.1.16"
+                    }
+                },
+                "spec": {
+                    "affinity": {
+                        "podAntiAffinity": {
+                            "preferredDuringSchedulingIgnoredDuringExecution": [
+                                {
+                                    "podAffinityTerm": {
+                                        "labelSelector": {
+                                            "matchLabels": {
+                                                "app.kubernetes.io/component": "customLabels",
+                                                "app.kubernetes.io/instance": "argocd",
+                                                "app.kubernetes.io/name": "argo-cd"
+                                            }
+                                        },
+                                        "topologyKey": "kubernetes.io/hostname"
+                                    },
+                                    "weight": 1
+                                }
+                            ]
+                        }
+                    },
+                    "containers": [
+                        {
+                            "args": [
+                                "argocd-server",
+                                "--staticassets",
+                                "/opt/bitnami/argo-cd/app",
+                                "--repo-server",
+                                "argocd-argo-cd-repo-server:8081",
+                                "--logformat",
+                                "text",
+                                "--loglevel",
+                                "info",
+                                "--redis",
+                                "argocd-redis-master:6379"
+                            ],
+                            "env": [
+                                {
+                                    "name": "REDIS_PASSWORD",
+                                    "valueFrom": {
+                                        "secretKeyRef": {
+                                            "key": "redis-password",
+                                            "name": "argocd-redis"
+                                        }
+                                    }
+                                }
+                            ],
+                            "image": "docker.io/bitnami/argo-cd:2.8.4-debian-11-r18",
+                            "imagePullPolicy": "IfNotPresent",
+                            "livenessProbe": {
+                                "failureThreshold": 3,
+                                "httpGet": {
+                                    "path": "/healthz",
+                                    "port": 8080,
+                                    "scheme": "HTTP"
+                                },
+                                "initialDelaySeconds": 10,
+                                "periodSeconds": 10,
+                                "successThreshold": 1,
+                                "timeoutSeconds": 1
+                            },
+                            "name": "argocd-server",
+                            "ports": [
+                                {
+                                    "containerPort": 8080,
+                                    "name": "http",
+                                    "protocol": "TCP"
+                                }
+                            ],
+                            "readinessProbe": {
+                                "failureThreshold": 3,
+                                "httpGet": {
+                                    "path": "/healthz",
+                                    "port": 8080,
+                                    "scheme": "HTTP"
+                                },
+                                "initialDelaySeconds": 10,
+                                "periodSeconds": 10,
+                                "successThreshold": 1,
+                                "timeoutSeconds": 1
+                            },
+                            "resources": {},
+                            "securityContext": {
+                                "allowPrivilegeEscalation": false,
+                                "capabilities": {
+                                    "drop": [
+                                        "all"
+                                    ]
+                                },
+                                "readOnlyRootFilesystem": false,
+                                "runAsNonRoot": true,
+                                "runAsUser": 1001
+                            },
+                            "terminationMessagePath": "/dev/termination-log",
+                            "terminationMessagePolicy": "File",
+                            "volumeMounts": [
+                                {
+                                    "mountPath": "/app/config/ssh",
+                                    "name": "ssh-known-hosts"
+                                },
+                                {
+                                    "mountPath": "/app/config/server/tls",
+                                    "name": "argocd-repo-server-tls"
+                                }
+                            ]
+                        }
+                    ],
+                    "dnsPolicy": "ClusterFirst",
+                    "initContainers": [
+                        {
+                            "args": [
+                                "-ec",
+                                "#!/bin/bash\n\nset -o errexit\nset -o nounset\nset -o pipefail\n\n. /opt/bitnami/scripts/libos.sh\n. /opt/bitnami/scripts/liblog.sh\n\ncheck_redis_connection() {\n  local result=\"$(redis-cli -h argocd-redis-master -p 6379  PING)\"\n  if [[ \"$result\" != \"PONG\" ]]; then\n    false\n  fi\n}\n\ninfo \"Checking redis connection...\"\nif ! retry_while \"check_redis_connection\"; then\n    error \"Could not connect to the Redis server\"\n    return 1\nelse\n    info \"Connected to the Redis instance\"\nfi\n"
+                            ],
+                            "command": [
+                                "/bin/bash"
+                            ],
+                            "env": [
+                                {
+                                    "name": "REDISCLI_AUTH",
+                                    "valueFrom": {
+                                        "secretKeyRef": {
+                                            "key": "redis-password",
+                                            "name": "argocd-redis"
+                                        }
+                                    }
+                                }
+                            ],
+                            "image": "docker.io/bitnami/redis:7.2.2-debian-11-r0",
+                            "imagePullPolicy": "IfNotPresent",
+                            "name": "wait-for-redis",
+                            "resources": {},
+                            "terminationMessagePath": "/dev/termination-log",
+                            "terminationMessagePolicy": "File"
+                        }
+                    ],
+                    "restartPolicy": "Always",
+                    "schedulerName": "default-scheduler",
+                    "securityContext": {
+                        "fsGroup": 1001
+                    },
+                    "serviceAccount": "argocd-argo-cd-argocd-server",
+                    "serviceAccountName": "argocd-argo-cd-argocd-server",
+                    "terminationGracePeriodSeconds": 30,
+                    "volumes": [
+                        {
+                            "configMap": {
+                                "defaultMode": 420,
+                                "name": "argocd-ssh-known-hosts-cm"
+                            },
+                            "name": "ssh-known-hosts"
+                        },
+                        {
+                            "name": "argocd-repo-server-tls",
+                            "secret": {
+                                "defaultMode": 420,
+                                "items": [
+                                    {
+                                        "key": "tls.crt",
+                                        "path": "tls.crt"
+                                    },
+                                    {
+                                        "key": "tls.key",
+                                        "path": "tls.key"
+                                    },
+                                    {
+                                        "key": "ca.crt",
+                                        "path": "ca.crt"
+                                    }
+                                ],
+                                "optional": true,
+                                "secretName": "argocd-repo-server-tls"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "status": {
+            "availableReplicas": 1,
+            "conditions": [
+                {
+                    "lastTransitionTime": "2023-10-26T17:16:43Z",
+                    "lastUpdateTime": "2023-10-26T17:16:43Z",
+                    "message": "Deployment has minimum availability.",
+                    "reason": "MinimumReplicasAvailable",
+                    "status": "True",
+                    "type": "Available"
+                },
+                {
+                    "lastTransitionTime": "2023-10-26T17:15:33Z",
+                    "lastUpdateTime": "2023-10-26T17:16:43Z",
+                    "message": "ReplicaSet \"argocd-argo-cd-server-6957c489b9\" has successfully progressed.",
+                    "reason": "NewReplicaSetAvailable",
+                    "status": "True",
+                    "type": "Progressing"
+                }
+            ],
+            "observedGeneration": 1,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updatedReplicas": 1
+        }
+    },
+    {
+        "apiVersion": "apps/v1",
+        "kind": "StatefulSet",
+        "metadata": {
+            "annotations": {
+                "meta.helm.sh/release-name": "argocd",
+                "meta.helm.sh/release-namespace": "default"
+            },
+            "creationTimestamp": "2023-10-26T17:15:33Z",
+            "generation": 1,
+            "labels": {
+                "app.kubernetes.io/component": "master",
+                "app.kubernetes.io/instance": "argocd",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "redis",
+                "app.kubernetes.io/version": "7.2.2",
+                "helm.sh/chart": "redis-18.1.6"
+            },
+            "managedFields": [
+                {
+                    "apiVersion": "apps/v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:metadata": {
+                            "f:annotations": {
+                                ".": {},
+                                "f:meta.helm.sh/release-name": {},
+                                "f:meta.helm.sh/release-namespace": {}
+                            },
+                            "f:labels": {
+                                ".": {},
+                                "f:app.kubernetes.io/component": {},
+                                "f:app.kubernetes.io/instance": {},
+                                "f:app.kubernetes.io/managed-by": {},
+                                "f:app.kubernetes.io/name": {},
+                                "f:app.kubernetes.io/version": {},
+                                "f:helm.sh/chart": {}
+                            }
+                        },
+                        "f:spec": {
+                            "f:persistentVolumeClaimRetentionPolicy": {
+                                ".": {},
+                                "f:whenDeleted": {},
+                                "f:whenScaled": {}
+                            },
+                            "f:podManagementPolicy": {},
+                            "f:replicas": {},
+                            "f:revisionHistoryLimit": {},
+                            "f:selector": {},
+                            "f:serviceName": {},
+                            "f:template": {
+                                "f:metadata": {
+                                    "f:annotations": {
+                                        ".": {},
+                                        "f:checksum/configmap": {},
+                                        "f:checksum/health": {},
+                                        "f:checksum/scripts": {},
+                                        "f:checksum/secret": {}
+                                    },
+                                    "f:labels": {
+                                        ".": {},
+                                        "f:app.kubernetes.io/component": {},
+                                        "f:app.kubernetes.io/instance": {},
+                                        "f:app.kubernetes.io/managed-by": {},
+                                        "f:app.kubernetes.io/name": {},
+                                        "f:app.kubernetes.io/version": {},
+                                        "f:helm.sh/chart": {}
+                                    }
+                                },
+                                "f:spec": {
+                                    "f:affinity": {
+                                        ".": {},
+                                        "f:podAntiAffinity": {
+                                            ".": {},
+                                            "f:preferredDuringSchedulingIgnoredDuringExecution": {}
+                                        }
+                                    },
+                                    "f:automountServiceAccountToken": {},
+                                    "f:containers": {
+                                        "k:{\"name\":\"redis\"}": {
+                                            ".": {},
+                                            "f:args": {},
+                                            "f:command": {},
+                                            "f:env": {
+                                                ".": {},
+                                                "k:{\"name\":\"ALLOW_EMPTY_PASSWORD\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:value": {}
+                                                },
+                                                "k:{\"name\":\"BITNAMI_DEBUG\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:value": {}
+                                                },
+                                                "k:{\"name\":\"REDIS_PASSWORD\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:valueFrom": {
+                                                        ".": {},
+                                                        "f:secretKeyRef": {}
+                                                    }
+                                                },
+                                                "k:{\"name\":\"REDIS_PORT\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:value": {}
+                                                },
+                                                "k:{\"name\":\"REDIS_REPLICATION_MODE\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:value": {}
+                                                },
+                                                "k:{\"name\":\"REDIS_TLS_ENABLED\"}": {
+                                                    ".": {},
+                                                    "f:name": {},
+                                                    "f:value": {}
+                                                }
+                                            },
+                                            "f:image": {},
+                                            "f:imagePullPolicy": {},
+                                            "f:livenessProbe": {
+                                                ".": {},
+                                                "f:exec": {
+                                                    ".": {},
+                                                    "f:command": {}
+                                                },
+                                                "f:failureThreshold": {},
+                                                "f:initialDelaySeconds": {},
+                                                "f:periodSeconds": {},
+                                                "f:successThreshold": {},
+                                                "f:timeoutSeconds": {}
+                                            },
+                                            "f:name": {},
+                                            "f:ports": {
+                                                ".": {},
+                                                "k:{\"containerPort\":6379,\"protocol\":\"TCP\"}": {
+                                                    ".": {},
+                                                    "f:containerPort": {},
+                                                    "f:name": {},
+                                                    "f:protocol": {}
+                                                }
+                                            },
+                                            "f:readinessProbe": {
+                                                ".": {},
+                                                "f:exec": {
+                                                    ".": {},
+                                                    "f:command": {}
+                                                },
+                                                "f:failureThreshold": {},
+                                                "f:initialDelaySeconds": {},
+                                                "f:periodSeconds": {},
+                                                "f:successThreshold": {},
+                                                "f:timeoutSeconds": {}
+                                            },
+                                            "f:resources": {},
+                                            "f:securityContext": {
+                                                ".": {},
+                                                "f:allowPrivilegeEscalation": {},
+                                                "f:capabilities": {
+                                                    ".": {},
+                                                    "f:drop": {}
+                                                },
+                                                "f:runAsGroup": {},
+                                                "f:runAsNonRoot": {},
+                                                "f:runAsUser": {},
+                                                "f:seccompProfile": {
+                                                    ".": {},
+                                                    "f:type": {}
+                                                }
+                                            },
+                                            "f:terminationMessagePath": {},
+                                            "f:terminationMessagePolicy": {},
+                                            "f:volumeMounts": {
+                                                ".": {},
+                                                "k:{\"mountPath\":\"/data\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                },
+                                                "k:{\"mountPath\":\"/health\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                },
+                                                "k:{\"mountPath\":\"/opt/bitnami/redis/etc/\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                },
+                                                "k:{\"mountPath\":\"/opt/bitnami/redis/mounted-etc\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                },
+                                                "k:{\"mountPath\":\"/opt/bitnami/scripts/start-scripts\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                },
+                                                "k:{\"mountPath\":\"/tmp\"}": {
+                                                    ".": {},
+                                                    "f:mountPath": {},
+                                                    "f:name": {}
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "f:dnsPolicy": {},
+                                    "f:enableServiceLinks": {},
+                                    "f:restartPolicy": {},
+                                    "f:schedulerName": {},
+                                    "f:securityContext": {
+                                        ".": {},
+                                        "f:fsGroup": {}
+                                    },
+                                    "f:serviceAccount": {},
+                                    "f:serviceAccountName": {},
+                                    "f:terminationGracePeriodSeconds": {},
+                                    "f:volumes": {
+                                        ".": {},
+                                        "k:{\"name\":\"config\"}": {
+                                            ".": {},
+                                            "f:configMap": {
+                                                ".": {},
+                                                "f:defaultMode": {},
+                                                "f:name": {}
+                                            },
+                                            "f:name": {}
+                                        },
+                                        "k:{\"name\":\"health\"}": {
+                                            ".": {},
+                                            "f:configMap": {
+                                                ".": {},
+                                                "f:defaultMode": {},
+                                                "f:name": {}
+                                            },
+                                            "f:name": {}
+                                        },
+                                        "k:{\"name\":\"redis-tmp-conf\"}": {
+                                            ".": {},
+                                            "f:emptyDir": {},
+                                            "f:name": {}
+                                        },
+                                        "k:{\"name\":\"start-scripts\"}": {
+                                            ".": {},
+                                            "f:configMap": {
+                                                ".": {},
+                                                "f:defaultMode": {},
+                                                "f:name": {}
+                                            },
+                                            "f:name": {}
+                                        },
+                                        "k:{\"name\":\"tmp\"}": {
+                                            ".": {},
+                                            "f:emptyDir": {},
+                                            "f:name": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "f:updateStrategy": {
+                                "f:type": {}
+                            },
+                            "f:volumeClaimTemplates": {}
+                        }
+                    },
+                    "manager": "kubeapps-apis",
+                    "operation": "Update",
+                    "time": "2023-10-26T17:15:33Z"
+                },
+                {
+                    "apiVersion": "apps/v1",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:status": {
+                            "f:availableReplicas": {},
+                            "f:collisionCount": {},
+                            "f:currentReplicas": {},
+                            "f:currentRevision": {},
+                            "f:observedGeneration": {},
+                            "f:readyReplicas": {},
+                            "f:replicas": {},
+                            "f:updateRevision": {},
+                            "f:updatedReplicas": {}
+                        }
+                    },
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "subresource": "status",
+                    "time": "2023-10-26T17:16:09Z"
+                }
+            ],
+            "name": "argocd-redis-master",
+            "namespace": "default",
+            "resourceVersion": "88590",
+            "uid": "eafb573d-b673-4977-8fd6-33f7fdda13ec"
+        },
+        "spec": {
+            "persistentVolumeClaimRetentionPolicy": {
+                "whenDeleted": "Retain",
+                "whenScaled": "Retain"
+            },
+            "podManagementPolicy": "OrderedReady",
+            "replicas": 1,
+            "revisionHistoryLimit": 10,
+            "selector": {
+                "matchLabels": {
+                    "app.kubernetes.io/component": "master",
+                    "app.kubernetes.io/instance": "argocd",
+                    "app.kubernetes.io/name": "redis"
+                }
+            },
+            "serviceName": "argocd-redis-headless",
+            "template": {
+                "metadata": {
+                    "annotations": {
+                        "checksum/configmap": "86bcc953bb473748a3d3dc60b7c11f34e60c93519234d4c37f42e22ada559d47",
+                        "checksum/health": "aff24913d801436ea469d8d374b2ddb3ec4c43ee7ab24663d5f8ff1a1b6991a9",
+                        "checksum/scripts": "560c33ff34d845009b51830c332aa05fa211444d1877d3526d3599be7543aaa5",
+                        "checksum/secret": "8db5928ed48b471cb6c299a1e8ff3feb6a7ed1a23daa11e7fc46d68dda0582c5"
+                    },
+                    "creationTimestamp": null,
+                    "labels": {
+                        "app.kubernetes.io/component": "master",
+                        "app.kubernetes.io/instance": "argocd",
+                        "app.kubernetes.io/managed-by": "Helm",
+                        "app.kubernetes.io/name": "redis",
+                        "app.kubernetes.io/version": "7.2.2",
+                        "helm.sh/chart": "redis-18.1.6"
+                    }
+                },
+                "spec": {
+                    "affinity": {
+                        "podAntiAffinity": {
+                            "preferredDuringSchedulingIgnoredDuringExecution": [
+                                {
+                                    "podAffinityTerm": {
+                                        "labelSelector": {
+                                            "matchLabels": {
+                                                "app.kubernetes.io/component": "master",
+                                                "app.kubernetes.io/instance": "argocd",
+                                                "app.kubernetes.io/name": "redis"
+                                            }
+                                        },
+                                        "topologyKey": "kubernetes.io/hostname"
+                                    },
+                                    "weight": 1
+                                }
+                            ]
+                        }
+                    },
+                    "automountServiceAccountToken": true,
+                    "containers": [
+                        {
+                            "args": [
+                                "-c",
+                                "/opt/bitnami/scripts/start-scripts/start-master.sh"
+                            ],
+                            "command": [
+                                "/bin/bash"
+                            ],
+                            "env": [
+                                {
+                                    "name": "BITNAMI_DEBUG",
+                                    "value": "false"
+                                },
+                                {
+                                    "name": "REDIS_REPLICATION_MODE",
+                                    "value": "master"
+                                },
+                                {
+                                    "name": "ALLOW_EMPTY_PASSWORD",
+                                    "value": "no"
+                                },
+                                {
+                                    "name": "REDIS_PASSWORD",
+                                    "valueFrom": {
+                                        "secretKeyRef": {
+                                            "key": "redis-password",
+                                            "name": "argocd-redis"
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "REDIS_TLS_ENABLED",
+                                    "value": "no"
+                                },
+                                {
+                                    "name": "REDIS_PORT",
+                                    "value": "6379"
+                                }
+                            ],
+                            "image": "docker.io/bitnami/redis:7.2.2-debian-11-r0",
+                            "imagePullPolicy": "IfNotPresent",
+                            "livenessProbe": {
+                                "exec": {
+                                    "command": [
+                                        "sh",
+                                        "-c",
+                                        "/health/ping_liveness_local.sh 5"
+                                    ]
+                                },
+                                "failureThreshold": 5,
+                                "initialDelaySeconds": 20,
+                                "periodSeconds": 5,
+                                "successThreshold": 1,
+                                "timeoutSeconds": 6
+                            },
+                            "name": "redis",
+                            "ports": [
+                                {
+                                    "containerPort": 6379,
+                                    "name": "redis",
+                                    "protocol": "TCP"
+                                }
+                            ],
+                            "readinessProbe": {
+                                "exec": {
+                                    "command": [
+                                        "sh",
+                                        "-c",
+                                        "/health/ping_readiness_local.sh 1"
+                                    ]
+                                },
+                                "failureThreshold": 5,
+                                "initialDelaySeconds": 20,
+                                "periodSeconds": 5,
+                                "successThreshold": 1,
+                                "timeoutSeconds": 2
+                            },
+                            "resources": {},
+                            "securityContext": {
+                                "allowPrivilegeEscalation": false,
+                                "capabilities": {
+                                    "drop": [
+                                        "ALL"
+                                    ]
+                                },
+                                "runAsGroup": 0,
+                                "runAsNonRoot": true,
+                                "runAsUser": 1001,
+                                "seccompProfile": {
+                                    "type": "RuntimeDefault"
+                                }
+                            },
+                            "terminationMessagePath": "/dev/termination-log",
+                            "terminationMessagePolicy": "File",
+                            "volumeMounts": [
+                                {
+                                    "mountPath": "/opt/bitnami/scripts/start-scripts",
+                                    "name": "start-scripts"
+                                },
+                                {
+                                    "mountPath": "/health",
+                                    "name": "health"
+                                },
+                                {
+                                    "mountPath": "/data",
+                                    "name": "redis-data"
+                                },
+                                {
+                                    "mountPath": "/opt/bitnami/redis/mounted-etc",
+                                    "name": "config"
+                                },
+                                {
+                                    "mountPath": "/opt/bitnami/redis/etc/",
+                                    "name": "redis-tmp-conf"
+                                },
+                                {
+                                    "mountPath": "/tmp",
+                                    "name": "tmp"
+                                }
+                            ]
+                        }
+                    ],
+                    "dnsPolicy": "ClusterFirst",
+                    "enableServiceLinks": true,
+                    "restartPolicy": "Always",
+                    "schedulerName": "default-scheduler",
+                    "securityContext": {
+                        "fsGroup": 1001
+                    },
+                    "serviceAccount": "argocd-redis",
+                    "serviceAccountName": "argocd-redis",
+                    "terminationGracePeriodSeconds": 30,
+                    "volumes": [
+                        {
+                            "configMap": {
+                                "defaultMode": 493,
+                                "name": "argocd-redis-scripts"
+                            },
+                            "name": "start-scripts"
+                        },
+                        {
+                            "configMap": {
+                                "defaultMode": 493,
+                                "name": "argocd-redis-health"
+                            },
+                            "name": "health"
+                        },
+                        {
+                            "configMap": {
+                                "defaultMode": 420,
+                                "name": "argocd-redis-configuration"
+                            },
+                            "name": "config"
+                        },
+                        {
+                            "emptyDir": {},
+                            "name": "redis-tmp-conf"
+                        },
+                        {
+                            "emptyDir": {},
+                            "name": "tmp"
+                        }
+                    ]
+                }
+            },
+            "updateStrategy": {
+                "type": "RollingUpdate"
+            },
+            "volumeClaimTemplates": [
+                {
+                    "apiVersion": "v1",
+                    "kind": "PersistentVolumeClaim",
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "app.kubernetes.io/component": "master",
+                            "app.kubernetes.io/instance": "argocd",
+                            "app.kubernetes.io/name": "redis"
+                        },
+                        "name": "redis-data"
+                    },
+                    "spec": {
+                        "accessModes": [
+                            "ReadWriteOnce"
+                        ],
+                        "resources": {
+                            "requests": {
+                                "storage": "8Gi"
+                            }
+                        },
+                        "volumeMode": "Filesystem"
+                    },
+                    "status": {
+                        "phase": "Pending"
+                    }
+                }
+            ]
+        },
+        "status": {
+            "availableReplicas": 1,
+            "collisionCount": 0,
+            "currentReplicas": 1,
+            "currentRevision": "argocd-redis-master-5d7c45568",
+            "observedGeneration": 1,
+            "readyReplicas": 1,
+            "replicas": 1,
+            "updateRevision": "argocd-redis-master-5d7c45568",
+            "updatedReplicas": 1
+        }
+    }
+]

@@ -49,11 +49,11 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
           {explorer.items.length > 0 && (
             <div className="relative">
               <div className="border" style={{ marginLeft: "30px" }}>
-                {explorer.items?.map((exp) => {
+                {explorer.items?.map((exp, index) => {
                   return (
                     <Folder
                       handleInsertNode={handleInsertNode}
-                      key={exp.id}
+                      key={index}
                       explorer={exp}
                     />
                   );
