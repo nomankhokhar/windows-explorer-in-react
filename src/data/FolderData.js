@@ -56,7 +56,14 @@ const explorer = {
           id: "10",
           name: "styles",
           isFolder: true,
-          items: [],
+          items: [
+            {
+              id: "14",
+              name: "Sir Mussa",
+              isFolder: true,
+              items: [],
+            },
+          ],
         },
       ],
     },
