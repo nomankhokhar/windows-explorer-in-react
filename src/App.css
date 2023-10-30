@@ -1,5 +1,5 @@
 .folder {
-  margin-top: 6px;
+  margin-top: 5px;
   background-color: lightgray;
   display: flex;
   align-items: center;
@@ -7,13 +7,10 @@
   padding: 10px 20px;
   font-family: sans-serif;
   width: 300px;
-  border-radius: 5px;
   cursor: pointer;
+  border-left: 5px solid #47d647;
 }
 
-.fullHeight {
-  height: 100vh;
-}
 .relative {
   position: relative;
 }
@@ -22,11 +19,28 @@
   align-items: center;
 }
 
+.item-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.padding {
+  padding-right: 10px;
+}
+
+.description {
+  font-size: 12px;
+}
+
+.flex-buttons {
+  display: flex;
+  gap: 5px;
+}
 .border {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 3px solid lightgray;
+  border-left: 3px solid #008361;
   border-radius: 10px 0 0 10px;
   padding-left: 10px;
   padding-bottom: 5px;
@@ -37,7 +51,7 @@
   content: "\2192";
   font-size: 35px;
   position: absolute;
-  color: lightgray;
+  color: #008631;
   top: 50%;
   left: 14px;
   transform: translate(-50%, -50%);

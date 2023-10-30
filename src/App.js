@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Folder from "./components/Folder";
 import explorer from "./data/FolderData";
@@ -14,32 +14,10 @@ function App() {
     setExplorerData(finalTree);
   };
 
-  const GetTableResources = async (argoCdData) => {
-    const currentData = argoCdData;
-    const tablekind = ["Deployment", "StatefulSet", "Secret", "Service"];
-    const explorerDataCopy = { ...explorerData };
-
-    tablekind.forEach((kind, index) => {
-      const currentObject = currentData.filter((obj) => obj.kind === kind);
-      const newArray = currentObject.map((obj) => ({
-        id: obj.uid,
-        name: obj.metadata.name,
-        isFolder: true,
-        items: [],
-      }));
-
-      explorerDataCopy.items[index].items.push(...newArray);
-    });
-
-    setExplorerData((pre) => (pre = explorerDataCopy));
-  };
-
-  useEffect(() => {
-    GetTableResources(argoCdData);
-  }, []);
+  console.log(argoCdData);
 
   return (
-    <div className="fullHeight">
+    <div>
       <Folder handleInsertNode={handleInsertNode} explorer={explorerData} />
     </div>
   );

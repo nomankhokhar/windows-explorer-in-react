@@ -1,41 +1,49 @@
 const explorer = {
   id: "1",
-  name: "argoCd",
+  name: "guestbook",
   isFolder: true,
   items: [
     {
       id: "2",
-      name: "Deployment",
-      isFolder: true,
-      items: [],
-    },
-    {
-      id: "3",
-      name: "StatefulSet",
-      isFolder: true,
-      items: [],
-    },
-    {
-      id: "4",
-      name: "Secret",
-      isFolder: true,
-      items: [],
-    },
-    {
-      id: "5",
-      name: "Service",
+      name: "guestbook-ui",
       isFolder: true,
       items: [
         {
-          id: "45",
-          name: "argocd-name",
+          id: "3",
+          name: "guestbook-ui",
+          isFolder: true,
+          items: [],
+        },
+        {
+          id: "4",
+          name: "guestbook-ui-jwjbx",
+          isFolder: true,
+          items: [],
+        },
+      ],
+    },
+    {
+      id: "6",
+      name: "guestbook-ui",
+      isFolder: true,
+      items: [
+        {
+          id: "5",
+          name: "guestbook-ui-565654545b",
           isFolder: true,
           items: [
             {
-              id: "34534",
-              name: "dsdfsd",
+              id: "7",
+              name: "guestbook-ui-565654545b",
               isFolder: true,
-              items: [],
+              items: [
+                {
+                  id: "8",
+                  name: "guestbook-ui-565654545b",
+                  isFolder: true,
+                  items: [],
+                },
+              ],
             },
           ],
         },

@@ -26,10 +26,21 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
   if (explorer.isFolder) {
     return (
       <div className="flex" style={{ marginTop: "5px" }}>
-        <div onClick={() => setExpand(!expand)} className="folder">
-          <span>📁 {explorer?.name}</span>{" "}
-          <div>
-            <button onClick={(e) => handleNewFolder(e, true)}>Folder +</button>
+        <div className="folder">
+          <div className="flex">
+            <div className="padding">&#x2705;</div>
+            <div className="item-flex">
+              <div>{explorer?.name.slice(0, 10)}</div>
+              <div className="description">description</div>
+            </div>
+          </div>
+          <div className="flex-buttons">
+            <button className="btn" onClick={(e) => handleNewFolder(e, true)}>
+              +
+            </button>
+            <button className="btn" onClick={(e) => setExpand(!expand)}>
+              ⋮
+            </button>
           </div>
         </div>
 
