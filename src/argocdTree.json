@@ -1,0 +1,194 @@
+{
+    "nodes": [
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "guestbook-ui",
+            "uid": "81a64cbf-7f10-4ab6-b007-a9ff94569e92",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "guestbook-ui",
+                    "uid": "eb1d2e5f-f9a3-464f-b976-e19e577cd2cf"
+                }
+            ],
+            "resourceVersion": "38505",
+            "createdAt": "2023-10-30T13:01:45Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "guestbook-ui-56c646849b-54zqr",
+            "uid": "7cc1e99e-73e4-41fb-8b70-d333172f328c",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "guestbook-ui-56c646849b",
+                    "uid": "a784a4b4-de84-49e8-9bc2-13ad73842c58"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-bound-cluster-xnmx6"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "app": "guestbook-ui",
+                    "pod-template-hash": "56c646849b"
+                }
+            },
+            "resourceVersion": "38575",
+            "images": [
+                "gcr.io/heptio-images/ks-guestbook-demo:0.2"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-10-30T13:01:45Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "guestbook-ui",
+            "uid": "eb1d2e5f-f9a3-464f-b976-e19e577cd2cf",
+            "networkingInfo": {
+                "targetLabels": {
+                    "app": "guestbook-ui"
+                }
+            },
+            "resourceVersion": "38504",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-10-30T13:01:45Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "guestbook-ui",
+            "uid": "379a3c25-7fb3-4276-a04a-4a33650840d0",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "38579",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-10-30T13:01:45Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "guestbook-ui-56c646849b",
+            "uid": "a784a4b4-de84-49e8-9bc2-13ad73842c58",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "guestbook-ui",
+                    "uid": "379a3c25-7fb3-4276-a04a-4a33650840d0"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "38578",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-10-30T13:01:45Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "guestbook-ui-56c646849b-54zqr",
+            "uid": "372a49be-63c3-4f84-b932-1a73c66e7d87",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "guestbook-ui-56c646849b-54zqr",
+                    "uid": "7cc1e99e-73e4-41fb-8b70-d333172f328c"
+                }
+            ],
+            "resourceVersion": "38531",
+            "createdAt": "2023-10-30T13:01:46Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "guestbook-ui-jwjbx",
+            "uid": "4c88bbc5-17da-42bf-8cc1-e7bd1f9ff857",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "guestbook-ui",
+                    "uid": "eb1d2e5f-f9a3-464f-b976-e19e577cd2cf"
+                }
+            ],
+            "resourceVersion": "38577",
+            "createdAt": "2023-10-30T13:01:45Z"
+        }
+    ],
+    "hosts": [
+        {
+            "name": "node-group-bound-cluster-xnmx6",
+            "resourcesInfo": [
+                {
+                    "resourceName": "cpu",
+                    "requestedByNeighbors": 1227,
+                    "capacity": 2000
+                },
+                {
+                    "resourceName": "memory",
+                    "requestedByNeighbors": 1561490560000,
+                    "capacity": 2062422016000
+                }
+            ],
+            "systemInfo": {
+                "machineID": "b649d508cb0443a4bb68303091e772af",
+                "systemUUID": "b649d508-cb04-43a4-bb68-303091e772af",
+                "bootID": "1f5913cc-d729-4cdd-9dbf-326666e19acd",
+                "kernelVersion": "6.1.0-12-amd64",
+                "osImage": "Debian GNU/Linux 12 (bookworm)",
+                "containerRuntimeVersion": "containerd://1.6.22",
+                "kubeletVersion": "v1.28.2",
+                "kubeProxyVersion": "v1.28.2",
+                "operatingSystem": "linux",
+                "architecture": "amd64"
+            }
+        }
+    ]
+}

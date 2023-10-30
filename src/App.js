@@ -22,7 +22,7 @@ function App() {
     tablekind.forEach((kind, index) => {
       const currentObject = currentData.filter((obj) => obj.kind === kind);
       const newArray = currentObject.map((obj) => ({
-        id: new Date().getTime() + obj.metadata.name,
+        id: obj.uid,
         name: obj.metadata.name,
         isFolder: true,
         items: [],

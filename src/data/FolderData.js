@@ -25,7 +25,21 @@ const explorer = {
       id: "5",
       name: "Service",
       isFolder: true,
-      items: [],
+      items: [
+        {
+          id: "45",
+          name: "argocd-name",
+          isFolder: true,
+          items: [
+            {
+              id: "34534",
+              name: "dsdfsd",
+              isFolder: true,
+              items: [],
+            },
+          ],
+        },
+      ],
     },
   ],
 };
