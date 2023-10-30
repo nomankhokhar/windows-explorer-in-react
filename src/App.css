@@ -31,6 +31,9 @@
 .description {
   font-size: 12px;
 }
+.btn-button {
+  background-color: lightgray !important;
+}
 
 .flex-buttons {
   display: flex;

@@ -35,10 +35,13 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
             </div>
           </div>
           <div className="flex-buttons">
-            <button className="btn" onClick={(e) => handleNewFolder(e, true)}>
+            <button
+              className="btn-button"
+              onClick={(e) => handleNewFolder(e, true)}
+            >
               +
             </button>
-            <button className="btn" onClick={(e) => setExpand(!expand)}>
+            <button className="btn-button" onClick={(e) => setExpand(!expand)}>
               ⋮
             </button>
           </div>
