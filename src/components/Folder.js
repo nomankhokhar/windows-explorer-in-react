@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
-const Folder = ({ handleInsertNode = () => {}, explorer }) => {
+const Folder = ({
+  handleInsertNode = () => {},
+  explorer,
+  handleDeleteNode = () => {},
+}) => {
   const [expand, setExpand] = useState(true);
   const [showInput, setShowInput] = useState({
     visible: false,
@@ -41,6 +45,14 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
             >
               +
             </button>
+            <button
+              className="btn-button"
+              onClick={(e) => {
+                handleDeleteNode(explorer.id);
+              }}
+            >
+              Delete
+            </button>
             <button className="btn-button" onClick={(e) => setExpand(!expand)}>
               ⋮
             </button>
@@ -60,15 +72,16 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
               />
             </div>
           )}
-          {explorer.items.length > 0 && (
+          {explorer?.items?.length > 0 && (
             <div className="relative">
               <div className="border" style={{ marginLeft: "30px" }}>
-                {explorer.items?.map((exp, index) => {
+                {explorer?.items?.map((exp, index) => {
                   return (
                     <Folder
                       handleInsertNode={handleInsertNode}
                       key={index}
                       explorer={exp}
+                      handleDeleteNode={handleDeleteNode}
                     />
                   );
                 })}

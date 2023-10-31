@@ -3,22 +3,30 @@ import "./App.css";
 import Folder from "./components/Folder";
 import explorer from "./data/FolderData";
 import useTraverseTree from "./hooks/use-traverse-tree";
-import argoCdData from "./argocd.json";
 
 function App() {
   const [explorerData, setExplorerData] = useState(explorer);
 
-  const { insertNode } = useTraverseTree();
+  const { insertNode, deleteNode } = useTraverseTree();
   const handleInsertNode = (folderId, item, isFolder) => {
     const finalTree = insertNode(explorerData, folderId, item, isFolder);
     setExplorerData(finalTree);
   };
 
-  console.log(argoCdData);
+  const handleDeleteNode = (id) => {
+    const finalTree = deleteNode(explorerData, id);
+    setExplorerData(finalTree);
+  };
 
   return (
     <div>
-      <Folder handleInsertNode={handleInsertNode} explorer={explorerData} />
+      {explorerData && (
+        <Folder
+          handleInsertNode={handleInsertNode}
+          explorer={explorerData}
+          handleDeleteNode={handleDeleteNode}
+        />
+      )}
     </div>
   );
 }
