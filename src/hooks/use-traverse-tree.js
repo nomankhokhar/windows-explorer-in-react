@@ -33,3 +33,32 @@ const useTraverseTree = () => {
 };
 
 export default useTraverseTree;
+
+export function mergeDataIntoExplorer(explorer, data) {
+  // Assuming the data is an array of objects like in the "nodes" array
+  data.forEach((node) => {
+    if (
+      node.kind === "Service" ||
+      node.kind === "Pod" ||
+      node.kind === "Deployment" ||
+      node.kind === "ReplicaSet"
+    ) {
+      // Create a new item to represent the node
+      const newNode = {
+        id: node.uid,
+        name: node.name,
+        isFolder: false, // Assuming these are not folders
+        // You can add other properties based on your needs
+      };
+
+      // Find the parent folder in the explorer and add the newNode
+      explorer.items.forEach((folder) => {
+        if (folder.name === node.namespace) {
+          folder.items.push(newNode);
+        }
+      });
+    }
+  });
+
+  return explorer;
+}

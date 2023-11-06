@@ -1,0 +1,2238 @@
+{
+    "nodes": [
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "carts-db",
+            "uid": "1d871897-8007-4730-a159-a4d1e6ed8f05",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "carts-db",
+                    "uid": "48e76031-e8a4-4861-af8f-20c57b1b3e32"
+                }
+            ],
+            "resourceVersion": "6092",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "catalogue",
+            "uid": "6eb640d4-90d6-432c-b394-77fb33035f3a",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "catalogue",
+                    "uid": "4c42c88f-1aa8-42d7-a6a5-cb057b9aace1"
+                }
+            ],
+            "resourceVersion": "6683",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "catalogue-db",
+            "uid": "edfac155-ec66-496e-ac52-0009e6466c25",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "catalogue-db",
+                    "uid": "c6ea276b-d8fe-4f01-a576-46b7e251c260"
+                }
+            ],
+            "resourceVersion": "6056",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "front-end",
+            "uid": "1ca54e27-c0f1-4cac-a7f7-f4a410c88ed7",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "front-end",
+                    "uid": "454907ee-3014-491a-9295-4d1e82814621"
+                }
+            ],
+            "resourceVersion": "6216",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "orders",
+            "uid": "77243557-9b0d-4dc1-8405-858960d22669",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "orders",
+                    "uid": "fae2d140-bb0d-4677-a917-c76ef1cb066f"
+                }
+            ],
+            "resourceVersion": "6745",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "orders-db",
+            "uid": "9faaf1d9-1038-4da7-8394-3f474e38773e",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "orders-db",
+                    "uid": "f4712c78-e16a-48c9-9af7-eab742f380d6"
+                }
+            ],
+            "resourceVersion": "6086",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "payment",
+            "uid": "d43ff8ef-6986-492c-9c75-11569752738f",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "payment",
+                    "uid": "cca602c2-d01e-4a17-a244-23068d5a7acf"
+                }
+            ],
+            "resourceVersion": "6706",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "queue-master",
+            "uid": "51c545b4-86d9-45b4-9acf-8a6023161c7c",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "queue-master",
+                    "uid": "dc5e9542-2e7e-4cbb-8388-eb19b0eab4f0"
+                }
+            ],
+            "resourceVersion": "6735",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "rabbitmq",
+            "uid": "d53f99bd-5511-4ac6-8fc4-7f04e70f0544",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "rabbitmq",
+                    "uid": "2e77d025-91d7-489c-a851-7634cda7af80"
+                }
+            ],
+            "resourceVersion": "6117",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "session-db",
+            "uid": "939bbf5d-495d-4a58-8351-8d623cee5dd0",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "session-db",
+                    "uid": "55ff9871-e544-47a5-8e4b-3956c4bababa"
+                }
+            ],
+            "resourceVersion": "5926",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "shipping",
+            "uid": "9edbcd9b-3339-446d-9d02-52a1b6383254",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "shipping",
+                    "uid": "90f12170-c5fb-4aa8-9ac2-234e5747823d"
+                }
+            ],
+            "resourceVersion": "6851",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "user",
+            "uid": "00ae0a48-6a6f-49c8-b64e-3a1be98cd6bb",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "user",
+                    "uid": "f037882f-4b6c-4c46-bd31-12bbe32f5222"
+                }
+            ],
+            "resourceVersion": "6699",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Endpoints",
+            "namespace": "default",
+            "name": "user-db",
+            "uid": "2fe81cf2-0299-414d-a495-9e50619fb98c",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "user-db",
+                    "uid": "4b1d8b68-7d3b-4be6-9385-914d9b9ee4c8"
+                }
+            ],
+            "resourceVersion": "6138",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "carts-766669f9-jqrfl",
+            "uid": "28cc67cb-e1c1-4237-90c0-4a9da688a31d",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "carts-766669f9",
+                    "uid": "658180b1-0225-4253-9a53-a6c0e669a59b"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "carts",
+                    "pod-template-hash": "766669f9"
+                }
+            },
+            "resourceVersion": "6881",
+            "images": [
+                "weaveworksdemos/carts:0.4.8"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "carts-db-644ff6b576-m5sj6",
+            "uid": "c96f5387-5b21-448c-abaa-9e6cd9adb5b0",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "carts-db-644ff6b576",
+                    "uid": "a011b94c-4e69-4609-b346-4fdb97407f99"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "carts-db",
+                    "pod-template-hash": "644ff6b576"
+                }
+            },
+            "resourceVersion": "6090",
+            "images": [
+                "mongo"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "catalogue-696757f5bb-w7kwb",
+            "uid": "5d5456bb-52d7-47fa-9137-4c50fe542a97",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "catalogue-696757f5bb",
+                    "uid": "016006a4-e07c-4edb-86b1-deb82dda1817"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "catalogue",
+                    "pod-template-hash": "696757f5bb"
+                }
+            },
+            "resourceVersion": "6681",
+            "images": [
+                "weaveworksdemos/catalogue:0.3.5"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "catalogue-db-d764d45d6-sbt9v",
+            "uid": "c7617882-7526-4947-8ac5-47501d49f298",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "catalogue-db-d764d45d6",
+                    "uid": "ffddb17b-f242-4881-a3b6-dd47bda38721"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "catalogue-db",
+                    "pod-template-hash": "d764d45d6"
+                }
+            },
+            "resourceVersion": "6054",
+            "images": [
+                "weaveworksdemos/catalogue-db:0.3.0"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "front-end-7899799bbd-b96rf",
+            "uid": "22921ef1-86a6-4f5d-b9c1-79d16cdcd07c",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "front-end-7899799bbd",
+                    "uid": "2b88cfc9-ac38-4584-b4c0-28c704f83a8f"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "front-end",
+                    "pod-template-hash": "7899799bbd"
+                }
+            },
+            "resourceVersion": "6215",
+            "images": [
+                "weaveworksdemos/front-end:0.3.12"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "orders-54ffbf46d8-7mxwl",
+            "uid": "801b7480-d759-4f41-a690-fc11a308de4f",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "orders-54ffbf46d8",
+                    "uid": "bbc7a218-be3d-4baa-a8f0-f2b2efede4b7"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "orders",
+                    "pod-template-hash": "54ffbf46d8"
+                }
+            },
+            "resourceVersion": "6744",
+            "images": [
+                "weaveworksdemos/orders:0.4.7"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "orders-db-5bddcf9bdb-4c2qh",
+            "uid": "0d87d98c-7310-456c-9351-f2f44d476f38",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "orders-db-5bddcf9bdb",
+                    "uid": "39e198b6-7ccf-46c1-bdb6-3311a2a09704"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "orders-db",
+                    "pod-template-hash": "5bddcf9bdb"
+                }
+            },
+            "resourceVersion": "6085",
+            "images": [
+                "mongo"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "payment-68d4ddd68d-pzn7p",
+            "uid": "a7c2396b-f392-4592-a732-36c54a16dc66",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "payment-68d4ddd68d",
+                    "uid": "ecc7688f-5e3a-475b-9d9a-d23a6daebc92"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "payment",
+                    "pod-template-hash": "68d4ddd68d"
+                }
+            },
+            "resourceVersion": "6705",
+            "images": [
+                "weaveworksdemos/payment:0.4.3"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "queue-master-7f5f9b6f8f-b5ptj",
+            "uid": "fc1c5369-c1e8-47e7-85b6-d1ec4ba5bfda",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "queue-master-7f5f9b6f8f",
+                    "uid": "10621559-6f6e-4a80-81e4-0ccac6420e5f"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "queue-master",
+                    "pod-template-hash": "7f5f9b6f8f"
+                }
+            },
+            "resourceVersion": "6734",
+            "images": [
+                "weaveworksdemos/queue-master:0.3.1"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "rabbitmq-5c6f77d9dd-wkspx",
+            "uid": "5d2587cf-55b7-4545-932d-9af53479fe01",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "rabbitmq-5c6f77d9dd",
+                    "uid": "5a43614c-685d-4d70-aba6-66a05ef2cda0"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "2/2"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "rabbitmq",
+                    "pod-template-hash": "5c6f77d9dd"
+                }
+            },
+            "resourceVersion": "6116",
+            "images": [
+                "rabbitmq:3.6.8-management",
+                "kbudde/rabbitmq-exporter"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "session-db-76d658cbf8-pnx7s",
+            "uid": "456e3a4c-a4d3-4ea7-a3f1-55dbc2fed73f",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "session-db-76d658cbf8",
+                    "uid": "26b52a35-35b0-4ab4-94e4-5a14bc747779"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "session-db",
+                    "pod-template-hash": "76d658cbf8"
+                }
+            },
+            "resourceVersion": "5925",
+            "images": [
+                "redis:alpine"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "shipping-5cf87d57db-lbfp9",
+            "uid": "5b88c9a6-b9a5-4b6c-88e9-b88ced020dae",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "shipping-5cf87d57db",
+                    "uid": "6dc899af-b7ec-4c8f-b856-cf02e966817e"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "shipping",
+                    "pod-template-hash": "5cf87d57db"
+                }
+            },
+            "resourceVersion": "6850",
+            "images": [
+                "weaveworksdemos/shipping:0.4.8"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "user-6b8b84fc9-z2lm9",
+            "uid": "0d1ba695-96f4-4b9a-9dae-a6e9d957dec4",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "user-6b8b84fc9",
+                    "uid": "abfbf8d4-6508-4969-af0f-eef62514205d"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "user",
+                    "pod-template-hash": "6b8b84fc9"
+                }
+            },
+            "resourceVersion": "6697",
+            "images": [
+                "weaveworksdemos/user:0.4.7"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "user-db-5bfb568f5b-9967c",
+            "uid": "aed7677b-dee9-4c55-a713-d32415af4dde",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "ReplicaSet",
+                    "namespace": "default",
+                    "name": "user-db-5bfb568f5b",
+                    "uid": "17e3f797-847c-4ee9-8703-e0d03f4594a9"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Status Reason",
+                    "value": "Running"
+                },
+                {
+                    "name": "Node",
+                    "value": "node-group-argo-noman-x3ebf"
+                },
+                {
+                    "name": "Containers",
+                    "value": "1/1"
+                }
+            ],
+            "networkingInfo": {
+                "labels": {
+                    "name": "user-db",
+                    "pod-template-hash": "5bfb568f5b"
+                }
+            },
+            "resourceVersion": "6136",
+            "images": [
+                "weaveworksdemos/user-db:0.3.0"
+            ],
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "carts-db",
+            "uid": "48e76031-e8a4-4861-af8f-20c57b1b3e32",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "carts-db"
+                }
+            },
+            "resourceVersion": "5603",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "catalogue",
+            "uid": "4c42c88f-1aa8-42d7-a6a5-cb057b9aace1",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "catalogue"
+                }
+            },
+            "resourceVersion": "5595",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "catalogue-db",
+            "uid": "c6ea276b-d8fe-4f01-a576-46b7e251c260",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "catalogue-db"
+                }
+            },
+            "resourceVersion": "5591",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "front-end",
+            "uid": "454907ee-3014-491a-9295-4d1e82814621",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "front-end"
+                }
+            },
+            "resourceVersion": "5635",
+            "health": {
+                "status": "Progressing"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "orders",
+            "uid": "fae2d140-bb0d-4677-a917-c76ef1cb066f",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "orders"
+                }
+            },
+            "resourceVersion": "5619",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "orders-db",
+            "uid": "f4712c78-e16a-48c9-9af7-eab742f380d6",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "orders-db"
+                }
+            },
+            "resourceVersion": "5599",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "payment",
+            "uid": "cca602c2-d01e-4a17-a244-23068d5a7acf",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "payment"
+                }
+            },
+            "resourceVersion": "5584",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "queue-master",
+            "uid": "dc5e9542-2e7e-4cbb-8388-eb19b0eab4f0",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "queue-master"
+                }
+            },
+            "resourceVersion": "5585",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "rabbitmq",
+            "uid": "2e77d025-91d7-489c-a851-7634cda7af80",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "rabbitmq"
+                }
+            },
+            "resourceVersion": "5615",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "session-db",
+            "uid": "55ff9871-e544-47a5-8e4b-3956c4bababa",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "session-db"
+                }
+            },
+            "resourceVersion": "5607",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "shipping",
+            "uid": "90f12170-c5fb-4aa8-9ac2-234e5747823d",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "shipping"
+                }
+            },
+            "resourceVersion": "5631",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "user",
+            "uid": "f037882f-4b6c-4c46-bd31-12bbe32f5222",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "user"
+                }
+            },
+            "resourceVersion": "5623",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "version": "v1",
+            "kind": "Service",
+            "namespace": "default",
+            "name": "user-db",
+            "uid": "4b1d8b68-7d3b-4be6-9385-914d9b9ee4c8",
+            "networkingInfo": {
+                "targetLabels": {
+                    "name": "user-db"
+                }
+            },
+            "resourceVersion": "5611",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "carts",
+            "uid": "e191fef8-53a6-4c6e-9b9f-de3108753418",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6883",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "carts-db",
+            "uid": "60e25ea8-942f-4377-9753-e7b5266422de",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6094",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "catalogue",
+            "uid": "39f8be36-3a7d-4c89-b037-64d792f9d1fe",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6685",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "catalogue-db",
+            "uid": "038c87a5-8560-4bad-ba16-9b414d0f369e",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6059",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "front-end",
+            "uid": "847eb3c1-2e2b-4fa3-bc4f-144f5ed04461",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6219",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "orders",
+            "uid": "0220038d-1342-4a54-a1bf-62f1fd272559",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6748",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "orders-db",
+            "uid": "e5b4ae9a-ba26-4b7b-848a-cf1d96a1e56d",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6089",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "payment",
+            "uid": "1a78edc6-2107-4d52-8c79-17f77bfdff23",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6709",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "queue-master",
+            "uid": "da28ccc2-e732-43b4-92b4-53cdf59256fa",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6738",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "rabbitmq",
+            "uid": "23f79e49-4765-452e-b9a8-6abde3168b7e",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6120",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "session-db",
+            "uid": "95a2b66a-4850-460d-bab6-5c73e59da31b",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "5929",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "shipping",
+            "uid": "61f1a09a-6e0e-42cc-888b-f29132e642d2",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6854",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "user",
+            "uid": "8b6e24e6-ce4a-45d6-88eb-3621916b323b",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6701",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "user-db",
+            "uid": "6e5c9578-7859-4b2f-b736-cf2ce36c3180",
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6140",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "carts-766669f9",
+            "uid": "658180b1-0225-4253-9a53-a6c0e669a59b",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "carts",
+                    "uid": "e191fef8-53a6-4c6e-9b9f-de3108753418"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6882",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "carts-db-644ff6b576",
+            "uid": "a011b94c-4e69-4609-b346-4fdb97407f99",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "carts-db",
+                    "uid": "60e25ea8-942f-4377-9753-e7b5266422de"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6093",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "catalogue-696757f5bb",
+            "uid": "016006a4-e07c-4edb-86b1-deb82dda1817",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "catalogue",
+                    "uid": "39f8be36-3a7d-4c89-b037-64d792f9d1fe"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6684",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "catalogue-db-d764d45d6",
+            "uid": "ffddb17b-f242-4881-a3b6-dd47bda38721",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "catalogue-db",
+                    "uid": "038c87a5-8560-4bad-ba16-9b414d0f369e"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6058",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "front-end-7899799bbd",
+            "uid": "2b88cfc9-ac38-4584-b4c0-28c704f83a8f",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "front-end",
+                    "uid": "847eb3c1-2e2b-4fa3-bc4f-144f5ed04461"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6218",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "orders-54ffbf46d8",
+            "uid": "bbc7a218-be3d-4baa-a8f0-f2b2efede4b7",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "orders",
+                    "uid": "0220038d-1342-4a54-a1bf-62f1fd272559"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6747",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "orders-db-5bddcf9bdb",
+            "uid": "39e198b6-7ccf-46c1-bdb6-3311a2a09704",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "orders-db",
+                    "uid": "e5b4ae9a-ba26-4b7b-848a-cf1d96a1e56d"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6088",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "payment-68d4ddd68d",
+            "uid": "ecc7688f-5e3a-475b-9d9a-d23a6daebc92",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "payment",
+                    "uid": "1a78edc6-2107-4d52-8c79-17f77bfdff23"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6708",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "queue-master-7f5f9b6f8f",
+            "uid": "10621559-6f6e-4a80-81e4-0ccac6420e5f",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "queue-master",
+                    "uid": "da28ccc2-e732-43b4-92b4-53cdf59256fa"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6737",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "rabbitmq-5c6f77d9dd",
+            "uid": "5a43614c-685d-4d70-aba6-66a05ef2cda0",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "rabbitmq",
+                    "uid": "23f79e49-4765-452e-b9a8-6abde3168b7e"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6118",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "session-db-76d658cbf8",
+            "uid": "26b52a35-35b0-4ab4-94e4-5a14bc747779",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "session-db",
+                    "uid": "95a2b66a-4850-460d-bab6-5c73e59da31b"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "5928",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "shipping-5cf87d57db",
+            "uid": "6dc899af-b7ec-4c8f-b856-cf02e966817e",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "shipping",
+                    "uid": "61f1a09a-6e0e-42cc-888b-f29132e642d2"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6853",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "user-6b8b84fc9",
+            "uid": "abfbf8d4-6508-4969-af0f-eef62514205d",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "user",
+                    "uid": "8b6e24e6-ce4a-45d6-88eb-3621916b323b"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6700",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "apps",
+            "version": "v1",
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "user-db-5bfb568f5b",
+            "uid": "17e3f797-847c-4ee9-8703-e0d03f4594a9",
+            "parentRefs": [
+                {
+                    "group": "apps",
+                    "kind": "Deployment",
+                    "namespace": "default",
+                    "name": "user-db",
+                    "uid": "6e5c9578-7859-4b2f-b736-cf2ce36c3180"
+                }
+            ],
+            "info": [
+                {
+                    "name": "Revision",
+                    "value": "Rev:1"
+                }
+            ],
+            "resourceVersion": "6139",
+            "health": {
+                "status": "Healthy"
+            },
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "carts-766669f9-jqrfl",
+            "uid": "55787d9a-4e5c-4171-9a0a-e2c18c50894f",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "carts-766669f9-jqrfl",
+                    "uid": "28cc67cb-e1c1-4237-90c0-4a9da688a31d"
+                }
+            ],
+            "resourceVersion": "5883",
+            "createdAt": "2023-11-02T17:20:31Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "carts-db-644ff6b576-m5sj6",
+            "uid": "8cc6b0c4-fceb-474c-956f-90e12fba1776",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "carts-db-644ff6b576-m5sj6",
+                    "uid": "c96f5387-5b21-448c-abaa-9e6cd9adb5b0"
+                }
+            ],
+            "resourceVersion": "5777",
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "catalogue-696757f5bb-w7kwb",
+            "uid": "cbf6346c-5ec2-445f-bd50-b011b24096e5",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "catalogue-696757f5bb-w7kwb",
+                    "uid": "5d5456bb-52d7-47fa-9137-4c50fe542a97"
+                }
+            ],
+            "resourceVersion": "5849",
+            "createdAt": "2023-11-02T17:20:27Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "catalogue-db-d764d45d6-sbt9v",
+            "uid": "0ea6e79b-fa96-4dca-a327-848d84188021",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "catalogue-db-d764d45d6-sbt9v",
+                    "uid": "c7617882-7526-4947-8ac5-47501d49f298"
+                }
+            ],
+            "resourceVersion": "5801",
+            "createdAt": "2023-11-02T17:20:26Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "front-end-7899799bbd-b96rf",
+            "uid": "8acdb5db-47be-4084-b551-609736fd2e33",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "front-end-7899799bbd-b96rf",
+                    "uid": "22921ef1-86a6-4f5d-b9c1-79d16cdcd07c"
+                }
+            ],
+            "resourceVersion": "5881",
+            "createdAt": "2023-11-02T17:20:31Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "orders-54ffbf46d8-7mxwl",
+            "uid": "489774c8-ad52-496a-881b-7c983b43e5a7",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "orders-54ffbf46d8-7mxwl",
+                    "uid": "801b7480-d759-4f41-a690-fc11a308de4f"
+                }
+            ],
+            "resourceVersion": "5887",
+            "createdAt": "2023-11-02T17:20:32Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "orders-db-5bddcf9bdb-4c2qh",
+            "uid": "4226ed99-b33a-4734-b70e-09f1b931b322",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "orders-db-5bddcf9bdb-4c2qh",
+                    "uid": "0d87d98c-7310-456c-9351-f2f44d476f38"
+                }
+            ],
+            "resourceVersion": "5884",
+            "createdAt": "2023-11-02T17:20:31Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "payment-68d4ddd68d-pzn7p",
+            "uid": "e61c600e-613e-471f-b5fa-3dfd2c5939df",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "payment-68d4ddd68d-pzn7p",
+                    "uid": "a7c2396b-f392-4592-a732-36c54a16dc66"
+                }
+            ],
+            "resourceVersion": "5886",
+            "createdAt": "2023-11-02T17:20:31Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "queue-master-7f5f9b6f8f-b5ptj",
+            "uid": "56925933-c3c7-4426-80e0-2f7144c2690a",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "queue-master-7f5f9b6f8f-b5ptj",
+                    "uid": "fc1c5369-c1e8-47e7-85b6-d1ec4ba5bfda"
+                }
+            ],
+            "resourceVersion": "5843",
+            "createdAt": "2023-11-02T17:20:27Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "rabbitmq-5c6f77d9dd-wkspx",
+            "uid": "8e5cfef6-5d67-425c-8d9a-b79210e989fc",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "rabbitmq-5c6f77d9dd-wkspx",
+                    "uid": "5d2587cf-55b7-4545-932d-9af53479fe01"
+                }
+            ],
+            "resourceVersion": "5859",
+            "createdAt": "2023-11-02T17:20:28Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "session-db-76d658cbf8-pnx7s",
+            "uid": "1ad757af-c5ad-44c8-bff3-bcd1852c7a0a",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "session-db-76d658cbf8-pnx7s",
+                    "uid": "456e3a4c-a4d3-4ea7-a3f1-55dbc2fed73f"
+                }
+            ],
+            "resourceVersion": "5796",
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "shipping-5cf87d57db-lbfp9",
+            "uid": "ef26edee-2708-4791-8e4f-eb47f160167b",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "shipping-5cf87d57db-lbfp9",
+                    "uid": "5b88c9a6-b9a5-4b6c-88e9-b88ced020dae"
+                }
+            ],
+            "resourceVersion": "5797",
+            "createdAt": "2023-11-02T17:20:25Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "user-6b8b84fc9-z2lm9",
+            "uid": "75125233-0960-4028-bda6-02c912766dd1",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "user-6b8b84fc9-z2lm9",
+                    "uid": "0d1ba695-96f4-4b9a-9dae-a6e9d957dec4"
+                }
+            ],
+            "resourceVersion": "5878",
+            "createdAt": "2023-11-02T17:20:31Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "user-db-5bfb568f5b-9967c",
+            "uid": "eea2d35f-9758-479b-8b01-c6560545854c",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "user-db-5bfb568f5b-9967c",
+                    "uid": "aed7677b-dee9-4c55-a713-d32415af4dde"
+                }
+            ],
+            "resourceVersion": "5866",
+            "createdAt": "2023-11-02T17:20:29Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "carts-db-wd6ft",
+            "uid": "af23b69d-4437-415e-b17a-206d4dfd451c",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "carts-db",
+                    "uid": "48e76031-e8a4-4861-af8f-20c57b1b3e32"
+                }
+            ],
+            "resourceVersion": "6091",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "catalogue-8h7fd",
+            "uid": "cff9f135-9d31-43dd-b3f6-3004ddbcd9db",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "catalogue",
+                    "uid": "4c42c88f-1aa8-42d7-a6a5-cb057b9aace1"
+                }
+            ],
+            "resourceVersion": "6682",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "catalogue-db-n54bq",
+            "uid": "3ab9646f-f64e-4866-a507-e49a51778a28",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "catalogue-db",
+                    "uid": "c6ea276b-d8fe-4f01-a576-46b7e251c260"
+                }
+            ],
+            "resourceVersion": "6057",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "front-end-mvkvq",
+            "uid": "e73c876a-6460-4bd9-b787-3cc1f203608f",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "front-end",
+                    "uid": "454907ee-3014-491a-9295-4d1e82814621"
+                }
+            ],
+            "resourceVersion": "6217",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "orders-db-zwg5p",
+            "uid": "4e575825-0e08-45c7-bc95-3369f3f25831",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "orders-db",
+                    "uid": "f4712c78-e16a-48c9-9af7-eab742f380d6"
+                }
+            ],
+            "resourceVersion": "6087",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "orders-tchpl",
+            "uid": "536571be-98b2-4216-9639-7d274ea79ea1",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "orders",
+                    "uid": "fae2d140-bb0d-4677-a917-c76ef1cb066f"
+                }
+            ],
+            "resourceVersion": "6746",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "payment-d8gkf",
+            "uid": "50660805-ee46-4188-9942-fe5e14061cb6",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "payment",
+                    "uid": "cca602c2-d01e-4a17-a244-23068d5a7acf"
+                }
+            ],
+            "resourceVersion": "6707",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "queue-master-25g7l",
+            "uid": "e7c81d88-cec8-44e2-9e90-ca0091383ea5",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "queue-master",
+                    "uid": "dc5e9542-2e7e-4cbb-8388-eb19b0eab4f0"
+                }
+            ],
+            "resourceVersion": "6736",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "rabbitmq-znwwk",
+            "uid": "aa203816-2b6f-47ab-9480-0bc47cf62ee5",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "rabbitmq",
+                    "uid": "2e77d025-91d7-489c-a851-7634cda7af80"
+                }
+            ],
+            "resourceVersion": "6119",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "session-db-jpnzx",
+            "uid": "436a2bda-ce72-42af-9273-807052af0968",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "session-db",
+                    "uid": "55ff9871-e544-47a5-8e4b-3956c4bababa"
+                }
+            ],
+            "resourceVersion": "5927",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "shipping-zhqxr",
+            "uid": "967077d8-a019-49fd-9b6d-d318a1a39996",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "shipping",
+                    "uid": "90f12170-c5fb-4aa8-9ac2-234e5747823d"
+                }
+            ],
+            "resourceVersion": "6852",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "user-9lx6g",
+            "uid": "325d1821-d0d4-4021-bda2-265d8ed3291b",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "user",
+                    "uid": "f037882f-4b6c-4c46-bd31-12bbe32f5222"
+                }
+            ],
+            "resourceVersion": "6698",
+            "createdAt": "2023-11-02T17:20:24Z"
+        },
+        {
+            "group": "discovery.k8s.io",
+            "version": "v1",
+            "kind": "EndpointSlice",
+            "namespace": "default",
+            "name": "user-db-9z4pv",
+            "uid": "a35bc700-39bd-447e-beba-d21bebcec0b2",
+            "parentRefs": [
+                {
+                    "kind": "Service",
+                    "namespace": "default",
+                    "name": "user-db",
+                    "uid": "4b1d8b68-7d3b-4be6-9385-914d9b9ee4c8"
+                }
+            ],
+            "resourceVersion": "6137",
+            "createdAt": "2023-11-02T17:20:24Z"
+        }
+    ],
+    "hosts": [
+        {
+            "name": "node-group-argo-noman-x3ebf",
+            "resourcesInfo": [
+                {
+                    "resourceName": "cpu",
+                    "requestedByApp": 1499,
+                    "requestedByNeighbors": 1227,
+                    "capacity": 4000
+                },
+                {
+                    "resourceName": "memory",
+                    "requestedByApp": 2726297600000,
+                    "requestedByNeighbors": 1561490560000,
+                    "capacity": 8326356992000
+                }
+            ],
+            "systemInfo": {
+                "machineID": "8c22f37179034b8f84fd8f3f954d5bb3",
+                "systemUUID": "8c22f371-7903-4b8f-84fd-8f3f954d5bb3",
+                "bootID": "4ce092ac-cff8-42f2-8db2-b2441121e475",
+                "kernelVersion": "6.1.0-12-amd64",
+                "osImage": "Debian GNU/Linux 12 (bookworm)",
+                "containerRuntimeVersion": "containerd://1.6.22",
+                "kubeletVersion": "v1.28.2",
+                "kubeProxyVersion": "v1.28.2",
+                "operatingSystem": "linux",
+                "architecture": "amd64"
+            }
+        }
+    ]
+}

@@ -34,7 +34,7 @@ const Folder = ({
           <div className="flex">
             <div className="padding">&#x2705;</div>
             <div className="item-flex">
-              <div>{explorer?.name.slice(0, 10)}</div>
+              <div>{explorer?.name}</div>
               <div className="description">description</div>
             </div>
           </div>

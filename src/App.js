@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Folder from "./components/Folder";
 import explorer from "./data/FolderData";
-import useTraverseTree from "./hooks/use-traverse-tree";
+import useTraverseTree, {
+  mergeDataIntoExplorer,
+} from "./hooks/use-traverse-tree";
+import data from "./argocdTree.json";
 
 function App() {
-  const [explorerData, setExplorerData] = useState(explorer);
+  const [explorerData, setExplorerData] = useState({});
 
   const { insertNode, deleteNode } = useTraverseTree();
   const handleInsertNode = (folderId, item, isFolder) => {
@@ -17,6 +20,12 @@ function App() {
     const finalTree = deleteNode(explorerData, id);
     setExplorerData(finalTree);
   };
+
+  useEffect(() => {
+    const updatedExplorer = mergeDataIntoExplorer(explorer, data.nodes);
+
+    setExplorerData(updatedExplorer);
+  }, []);
 
   return (
     <div>
