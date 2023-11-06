@@ -8,26 +8,43 @@ import useTraverseTree, {
 import data from "./argocdTree.json";
 
 function App() {
-  const [explorerData, setExplorerData] = useState({});
+  const [explorerData, setExplorerData] = useState(explorer);
 
   const { insertNode, deleteNode } = useTraverseTree();
-  const handleInsertNode = (folderId, item, isFolder) => {
-    const finalTree = insertNode(explorerData, folderId, item, isFolder);
+
+  const handleInsertNode = (parentID, folderId, item, isFolder) => {
+    const finalTree = insertNode(
+      explorerData,
+      parentID,
+      folderId,
+      item,
+      isFolder
+    );
     setExplorerData(finalTree);
   };
+
+  const [childs, setChilds] = useState([]);
+  useEffect(() => {
+    data?.nodes?.forEach((node) => {
+      if (node.hasOwnProperty("parentRefs")) {
+        setChilds((pre) => [...pre, node]);
+      } else {
+        node = { ...node, uid: new Date().getTime(), parentID: "1" };
+        handleInsertNode(node.parentID, node.uid, node.name, true);
+      }
+    });
+  }, []);
 
   const handleDeleteNode = (id) => {
     const finalTree = deleteNode(explorerData, id);
     setExplorerData(finalTree);
   };
 
-  useEffect(() => {
-    const updatedExplorer = mergeDataIntoExplorer(explorer, data.nodes);
+  // useEffect(() => {
+  //   const updatedExplorer = mergeDataIntoExplorer(explorer, data.nodes);
 
-    setExplorerData(updatedExplorer);
-  }, []);
-
-  console.log(data);
+  //   setExplorerData(updatedExplorer);
+  // }, []);
 
   return (
     <div>
