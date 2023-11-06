@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Folder from "./components/Folder";
-import explorer from "./data/FolderData";
+import explorer from "./template.json";
 import useTraverseTree from "./hooks/use-traverse-tree";
 
 function App() {

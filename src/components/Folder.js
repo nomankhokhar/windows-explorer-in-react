@@ -23,6 +23,14 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
     }
   };
 
+  const checkItem = (explorer) => {
+    if (explorer.template || explorer.child || explorer.packages) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   if (explorer.isFolder) {
     return (
       <div className="flex" style={{ marginTop: "5px" }}>
@@ -46,10 +54,28 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
               />
             </div>
           )}
-          {explorer.items.length > 0 && (
+          {checkItem(explorer) && (
             <div className="relative">
               <div className="border" style={{ marginLeft: "30px" }}>
-                {explorer.items?.map((exp) => {
+                {explorer?.template?.map((exp) => {
+                  return (
+                    <Folder
+                      handleInsertNode={handleInsertNode}
+                      key={exp.id}
+                      explorer={exp}
+                    />
+                  );
+                })}
+                {explorer?.child?.map((exp) => {
+                  return (
+                    <Folder
+                      handleInsertNode={handleInsertNode}
+                      key={exp.id}
+                      explorer={exp}
+                    />
+                  );
+                })}
+                {explorer?.packages?.map((exp) => {
                   return (
                     <Folder
                       handleInsertNode={handleInsertNode}

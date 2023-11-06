@@ -1,0 +1,84 @@
+{
+    "name": "profile-name",
+    "description": "test profile",
+    "id": "1",
+    "isFolder":true,
+    "template": [
+      {
+        "name":"application",
+        "isFolder":true,
+        "id": "2",
+        "type": "application",
+        "packages": [
+          {
+            "id": "123456",
+            "name": "azure_managed_cluster",
+            "isFolder":true,
+            "type": "gripo",
+            "layer": "cluster",
+            "version": "0.0.1",
+            "cloudType": "azure",
+            "values": "cloudServiceProvider: \"azure\"\nclusterConfig:\n  name: \"aks-cluster\"\n  credentialRef: \"azure-secret\"\n  resourceGroup:\n    name: \"first-group2\"\n  managedCluster:\n    name: \"aks-cluster\"\n    location: \"eastus\"\n    properties:\n      dnsPrefix: \"aks-cluster\"\n      agentPoolProfiles:\n        - name: \"aks-cluster\"\n          count: 1\n          vmSize: \"Standard_A2_v2\"\n          mode: \"System\"\n      servicePrincipalProfile:\n        clientId: \"azure-client-id-for-testing-purpose\"\n        secret: \"azuresecretfortestingpurpose\""
+          },
+          {
+            "name": "digital_ocean_simple",
+            "type": "gripo",
+            "isFolder":true,
+            "id": "3",
+            "layer": "cluster",
+            "version": "0.0.1",
+            "cloudType": "digitalocean",
+            "values": "cloudServiceProvider: \"digitalocean\"\nclusterConfig:\n  credentialRef: \"dgcluster2\"\n  createClusterRequest:\n    name: \"cluster1\"\n    region: \"lon1\"\n    version: \"1.28.0\"\n    node_pools:\n      - name: \"node-group-cluster1\"\n        count: 1\n        size: \"s-1vcpu-2gb-amd\""
+          },
+          {
+            "name": "digital_ocean_advance",
+            "type": "gripo",
+            "isFolder":true,
+            "id": "4",
+            "layer": "cluster",
+            "version": "0.0.1",
+            "cloudType": "digitalocean",
+            "values": "cloudServiceProvider: digitalocean\nclusterConfig:\n  credentialRef: dgcluster2\n  createClusterRequest:\n    name: cluster-advance\n    region: lon1\n    version: 1.28.0\n    tags:\n      - ali\n    node_pools:\n      - id: 1\n"
+          }
+        ]
+      },
+      {
+        "id":"dfgdfhd",
+        "isFolder":true,
+        "name": "digitalocean",
+        "type": "infra",
+        "child": [
+          {
+            "name": "azure_managed_cluster",
+            "type": "gripo",
+            "isFolder":true,
+            "id": "1234456",
+            "layer": "cluster",
+            "version": "0.0.1",
+            "cloudType": "azure",
+            "values": "cloudServiceProvider: \"azure\"\nclusterConfig:\n  name: \"aks-cluster\"\n  credentialRef: \"azure-secret\"\n  resourceGroup:\n    name: \"first-group2\"\n  managedCluster:\n    name: \"aks-cluster\"\n    location: \"eastus\"\n    properties:\n      dnsPrefix: \"aks-cluster\"\n      agentPoolProfiles:\n        - name: \"aks-cluster\"\n          count: 1\n          vmSize: \"Standard_A2_v2\"\n          mode: \"System\"\n      servicePrincipalProfile:\n        clientId: \"azure-client-id-for-testing-purpose\"\n        secret: \"azuresecretfortestingpurpose\""
+          },
+          {
+            "name": "digital_ocean_simple",
+            "type": "gripo",
+            "isFolder":true,
+            "layer": "cluster",
+            "id": "1234456fsd",
+            "version": "0.0.1",
+            "cloudType": "digitalocean",
+            "values": "cloudServiceProvider: \"digitalocean\"\nclusterConfig:\n  credentialRef: \"dgcluster2\"\n  createClusterRequest:\n    name: \"cluster1\"\n    region: \"lon1\"\n    version: \"1.28.0\"\n    node_pools:\n      - name: \"node-group-cluster1\"\n        count: 1\n        size: \"s-1vcpu-2gb-amd\""
+          },
+          {
+            "name": "digital_ocean_advance",
+            "type": "gripo",
+            "isFolder":true,
+            "layer": "cluster",
+            "id": "1234456sdfsdf",
+            "version": "0.0.1",
+            "cloudType": "digitalocean",
+            "values": "cloudServiceProvider: digitalocean\nclusterConfig:\n  credentialRef: dgcluster2\n  createClusterRequest:\n    name: cluster-advance\n    region: lon1\n    version: 1.28.0\n    tags:\n      - ali\n    node_pools:\n      - id: 1\n"
+          }
+        ]
+      }
+    ]
+  }
