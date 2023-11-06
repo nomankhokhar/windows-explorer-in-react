@@ -27,6 +27,8 @@ function App() {
     setExplorerData(updatedExplorer);
   }, []);
 
+  console.log(data);
+
   return (
     <div>
       {explorerData && (
