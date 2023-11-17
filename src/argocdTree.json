@@ -65,7 +65,7 @@
             "version": "v1",
             "kind": "Service",
             "namespace": "default",
-            "name": "guestbook-ui",
+            "name": "guestbook-ui-1",
             "uid": "eb1d2e5f-f9a3-464f-b976-e19e577cd2cf",
             "networkingInfo": {
                 "targetLabels": {
@@ -83,7 +83,7 @@
             "version": "v1",
             "kind": "Deployment",
             "namespace": "default",
-            "name": "guestbook-ui",
+            "name": "guestbook-ui-2",
             "uid": "379a3c25-7fb3-4276-a04a-4a33650840d0",
             "info": [
                 {
