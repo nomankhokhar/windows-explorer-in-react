@@ -4,11 +4,6 @@ import Folder from "./components/Folder";
 import explorer from "./data/FolderData";
 import useTraverseTree from "./hooks/use-traverse-tree";
 import data from "./argocdTree.json";
-import { jsonManipulation } from "./hooks/jsonManipulation";
-
-export const handleInsertNodes = (parentID, folderId, item, isFolder) => {
-  handleInsertNode(parentID, folderId, item, isFolder);
-};
 
 function App() {
   const [explorerData, setExplorerData] = useState(explorer);
@@ -30,7 +25,20 @@ function App() {
   const [parents, setParents] = useState([]);
 
   useEffect(() => {
-    jsonManipulation(data);
+    const handleNodes = () => {
+      data?.nodes?.forEach((node) => {
+        if (node.hasOwnProperty("parentRefs")) {
+          setChilds((prevChilds) => [...prevChilds, node]);
+        } else {
+          const newNode = { ...node, uid: new Date().getTime(), parentID: "1" };
+          handleInsertNode(newNode.parentID, newNode.uid, newNode.name, true);
+        }
+      });
+    };
+
+    handleNodes();
+
+    return () => {};
   }, []);
 
   const handleDeleteNode = (id) => {
