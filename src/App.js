@@ -13,7 +13,7 @@ function App() {
     items: [],
   });
 
-  const { insertNode, deleteNode } = useTraverseTree();
+  const { insertNode } = useTraverseTree();
 
   const handleInsertNode = (parentID, folderId, item, isFolder) => {
     const finalTree = insertNode(
@@ -27,42 +27,43 @@ function App() {
   };
 
   const [childs, setChilds] = useState([]);
-  const [parents, setParents] = useState([]);
+
+  useEffect(() => {
+    const handleChilders = (childs) => {
+      childs?.map((child)=>{
+
+        handleInsertNode(child.uid , )
+      })
+    }
+  }, [childs]);
 
   const handleNodes = async () => {
     data?.nodes?.forEach((node) => {
       if (node.hasOwnProperty("parentRefs")) {
-        setChilds((prevChilds) => [...prevChilds, node]);
+        setChilds((prevChilds) => [
+          ...prevChilds,
+          {
+            id: node.parentRefs[0].uid,
+            isFolder: true,
+            name: node.name,
+            items: [],
+          },
+        ]);
       } else {
-        const newNode = { ...node, uid: new Date().getTime(), parentID: "1" };
+        const newNode = { ...node, uid: node.uid, parentID: "1" };
         handleInsertNode(newNode.parentID, newNode.uid, newNode.name, true);
       }
     });
-  };
-
-  const handleDeleteNode = (id) => {
-    const finalTree = deleteNode(explorerData, id);
-    setExplorerData(finalTree);
   };
 
   useEffect(() => {
     handleNodes();
   }, []);
 
-  // useEffect(() => {
-  //   const updatedExplorer = mergeDataIntoExplorer(explorer, data.nodes);
-
-  //   setExplorerData(updatedExplorer);
-  // }, []);
-
   return (
     <div>
       {explorerData && (
-        <Folder
-          handleInsertNode={handleInsertNode}
-          explorer={explorerData}
-          handleDeleteNode={handleDeleteNode}
-        />
+        <Folder handleInsertNode={handleInsertNode} explorer={explorerData} />
       )}
     </div>
   );

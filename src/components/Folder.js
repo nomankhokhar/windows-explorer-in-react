@@ -1,24 +1,11 @@
 import React, { useState } from "react";
 
-const Folder = ({
-  handleInsertNode = () => {},
-  explorer,
-  handleDeleteNode = () => {},
-}) => {
+const Folder = ({ handleInsertNode = () => {}, explorer }) => {
   const [expand, setExpand] = useState(true);
   const [showInput, setShowInput] = useState({
     visible: false,
     isFolder: false,
   });
-
-  const handleNewFolder = (e, isFolder) => {
-    e.stopPropagation();
-    setExpand(true);
-    setShowInput({
-      visible: true,
-      isFolder,
-    });
-  };
 
   const onAddFolder = (e) => {
     if (e.keyCode === 13 && e.target.value) {
@@ -39,20 +26,6 @@ const Folder = ({
             </div>
           </div>
           <div className="flex-buttons">
-            <button
-              className="btn-button"
-              onClick={(e) => handleNewFolder(e, true)}
-            >
-              +
-            </button>
-            <button
-              className="btn-button"
-              onClick={(e) => {
-                handleDeleteNode(explorer.id);
-              }}
-            >
-              Delete
-            </button>
             <button className="btn-button" onClick={(e) => setExpand(!expand)}>
               ⋮
             </button>
@@ -81,7 +54,6 @@ const Folder = ({
                       handleInsertNode={handleInsertNode}
                       key={index}
                       explorer={exp}
-                      handleDeleteNode={handleDeleteNode}
                     />
                   );
                 })}
