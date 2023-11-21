@@ -15,25 +15,23 @@ function App() {
 
   const { insertNode } = useTraverseTree();
 
-  const handleInsertNode = (parentID, folderId, item, isFolder) => {
-    const finalTree = insertNode(
-      explorerData,
-      parentID,
-      folderId,
-      item,
-      isFolder
-    );
+  const handleInsertNode = (parentID, folderId, item) => {
+    const finalTree = insertNode(explorerData, parentID, folderId, item);
     setExplorerData((preFinalTree) => (preFinalTree = finalTree));
+    console.log(finalTree);
   };
 
   const [childs, setChilds] = useState([]);
 
   useEffect(() => {
-    const handleChilders = (childs) => {
-      childs?.map((child)=>{
-
-        handleInsertNode(child.uid , )
-      })
+    const handleChilders = () => {
+      childs?.map((child) => {
+        handleInsertNode(child.parentID, child.id, child.name);
+      });
+    };
+    if (childs.length > 0) {
+      handleChilders();
+      console.log(childs);
     }
   }, [childs]);
 
@@ -44,6 +42,7 @@ function App() {
           ...prevChilds,
           {
             id: node.parentRefs[0].uid,
+            parentID: node.parentRefs[0].uid,
             isFolder: true,
             name: node.name,
             items: [],
@@ -51,7 +50,7 @@ function App() {
         ]);
       } else {
         const newNode = { ...node, uid: node.uid, parentID: "1" };
-        handleInsertNode(newNode.parentID, newNode.uid, newNode.name, true);
+        handleInsertNode(newNode.parentID, newNode.uid, newNode.name);
       }
     });
   };
