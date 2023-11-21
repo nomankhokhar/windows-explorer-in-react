@@ -18,7 +18,6 @@ function App() {
   const handleInsertNode = (parentID, folderId, item) => {
     const finalTree = insertNode(explorerData, parentID, folderId, item);
     setExplorerData((preFinalTree) => (preFinalTree = finalTree));
-    console.log(finalTree);
   };
 
   const [childs, setChilds] = useState([]);
@@ -57,6 +56,16 @@ function App() {
 
   useEffect(() => {
     handleNodes();
+
+    return () => {
+      setExplorerData({
+        id: "1",
+        parentID: "1",
+        name: "guestbook",
+        isFolder: true,
+        items: [],
+      });
+    };
   }, []);
 
   return (
