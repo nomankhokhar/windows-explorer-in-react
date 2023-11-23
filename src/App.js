@@ -19,17 +19,17 @@ function App() {
   const handleInsertNode = (parentID, folderId, item, kind) => {
     const finalTree = insertNode(explorerData, parentID, folderId, item, kind);
     setExplorerData((preFinalTree) => (preFinalTree = finalTree));
-    console.log(finalTree);
   };
-
   const [childs, setChilds] = useState([]);
 
   const [childDone, setChildDone] = useState(false);
   useEffect(() => {
     const handleChilders = () => {
-      childs?.forEach((child) => {
-        handleInsertNode(child.parentID, child.id, child.name, child.kind);
-      });
+      for (let i = 0; i <= childs.length; i++) {
+        childs?.forEach((child) => {
+          handleInsertNode(child.parentID, child.id, child.name, child.kind);
+        });
+      }
       setChildDone(true);
     };
     if (childs.length > 0) {
@@ -50,14 +50,18 @@ function App() {
         for (let j = 0; j < children.length; j++) {
           if (children[i].uid === children[j].parentRefs[0].uid) {
             childernList = [...childernList, { ...children[j] }];
-            handleInsertNode(
-              children[j].parentRefs[0].uid,
-              children[j].uid,
-              children[j].name,
-              children[j].kind
-            );
           }
         }
+      }
+      for (let i = 0; i < childernList.length; i++) {
+        childernList.forEach((child) => {
+          handleInsertNode(
+            child.parentRefs[0].uid,
+            child.uid,
+            child.name,
+            child.kind
+          );
+        });
       }
     };
     if (childDone) {

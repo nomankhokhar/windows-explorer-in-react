@@ -4,32 +4,32 @@
             "version": "v1",
             "kind": "Endpoints",
             "namespace": "default",
-            "name": "guestbook-ui",
-            "uid": "81a64cbf-7f10-4ab6-b007-a9ff94569e92",
+            "name": "guestbook-helm-guestbook",
+            "uid": "dd6a0e4b-2d1c-4906-b2b5-68ac6c925055",
             "parentRefs": [
                 {
                     "kind": "Service",
                     "namespace": "default",
-                    "name": "guestbook-ui",
-                    "uid": "eb1d2e5f-f9a3-464f-b976-e19e577cd2cf"
+                    "name": "guestbook-helm-guestbook",
+                    "uid": "24c6779d-a92c-4fbc-a165-e3fd39db8c26"
                 }
             ],
-            "resourceVersion": "38505",
-            "createdAt": "2023-10-30T13:01:45Z"
+            "resourceVersion": "10607",
+            "createdAt": "2023-11-23T17:30:48Z"
         },
         {
             "version": "v1",
             "kind": "Pod",
             "namespace": "default",
-            "name": "guestbook-ui-56c646849b-54zqr",
-            "uid": "7cc1e99e-73e4-41fb-8b70-d333172f328c",
+            "name": "guestbook-helm-guestbook-6fd56f9f49-smlhh",
+            "uid": "945b62c8-249e-4028-a436-88899f4941f8",
             "parentRefs": [
                 {
                     "group": "apps",
                     "kind": "ReplicaSet",
                     "namespace": "default",
-                    "name": "guestbook-ui-56c646849b",
-                    "uid": "a784a4b4-de84-49e8-9bc2-13ad73842c58"
+                    "name": "guestbook-helm-guestbook-6fd56f9f49",
+                    "uid": "c5f228ff-b9ed-43d3-965c-767c1b9a2e5a"
                 }
             ],
             "info": [
@@ -39,7 +39,7 @@
                 },
                 {
                     "name": "Node",
-                    "value": "node-group-bound-cluster-xnmx6"
+                    "value": "node-group-clsuter-asd-asdasd-as-xxx7b"
                 },
                 {
                     "name": "Containers",
@@ -48,69 +48,71 @@
             ],
             "networkingInfo": {
                 "labels": {
-                    "app": "guestbook-ui",
-                    "pod-template-hash": "56c646849b"
+                    "app": "helm-guestbook",
+                    "pod-template-hash": "6fd56f9f49",
+                    "release": "guestbook"
                 }
             },
-            "resourceVersion": "38575",
+            "resourceVersion": "10688",
             "images": [
-                "gcr.io/heptio-images/ks-guestbook-demo:0.2"
+                "gcr.io/heptio-images/ks-guestbook-demo:0.1"
             ],
             "health": {
                 "status": "Healthy"
             },
-            "createdAt": "2023-10-30T13:01:45Z"
+            "createdAt": "2023-11-23T17:30:48Z"
         },
         {
             "version": "v1",
             "kind": "Service",
             "namespace": "default",
-            "name": "guestbook-ui-1",
-            "uid": "eb1d2e5f-f9a3-464f-b976-e19e577cd2cf",
+            "name": "guestbook-helm-guestbook",
+            "uid": "24c6779d-a92c-4fbc-a165-e3fd39db8c26",
             "networkingInfo": {
                 "targetLabels": {
-                    "app": "guestbook-ui"
+                    "app": "helm-guestbook",
+                    "release": "guestbook"
                 }
             },
-            "resourceVersion": "38504",
+            "resourceVersion": "10606",
             "health": {
                 "status": "Healthy"
             },
-            "createdAt": "2023-10-30T13:01:45Z"
+            "createdAt": "2023-11-23T17:30:48Z"
         },
         {
             "group": "apps",
             "version": "v1",
             "kind": "Deployment",
             "namespace": "default",
-            "name": "guestbook-ui-2",
-            "uid": "379a3c25-7fb3-4276-a04a-4a33650840d0",
+            "name": "guestbook-helm-guestbook",
+            "uid": "66c0769a-c3ca-4a06-a11e-a401841687d7",
             "info": [
                 {
                     "name": "Revision",
                     "value": "Rev:1"
                 }
             ],
-            "resourceVersion": "38579",
+            "resourceVersion": "10692",
             "health": {
                 "status": "Healthy"
             },
-            "createdAt": "2023-10-30T13:01:45Z"
+            "createdAt": "2023-11-23T17:30:48Z"
         },
         {
             "group": "apps",
             "version": "v1",
             "kind": "ReplicaSet",
             "namespace": "default",
-            "name": "guestbook-ui-56c646849b",
-            "uid": "a784a4b4-de84-49e8-9bc2-13ad73842c58",
+            "name": "guestbook-helm-guestbook-6fd56f9f49",
+            "uid": "c5f228ff-b9ed-43d3-965c-767c1b9a2e5a",
             "parentRefs": [
                 {
                     "group": "apps",
                     "kind": "Deployment",
                     "namespace": "default",
-                    "name": "guestbook-ui",
-                    "uid": "379a3c25-7fb3-4276-a04a-4a33650840d0"
+                    "name": "guestbook-helm-guestbook",
+                    "uid": "66c0769a-c3ca-4a06-a11e-a401841687d7"
                 }
             ],
             "info": [
@@ -119,52 +121,52 @@
                     "value": "Rev:1"
                 }
             ],
-            "resourceVersion": "38578",
+            "resourceVersion": "10691",
             "health": {
                 "status": "Healthy"
             },
-            "createdAt": "2023-10-30T13:01:45Z"
+            "createdAt": "2023-11-23T17:30:48Z"
         },
         {
             "group": "cilium.io",
             "version": "v2",
             "kind": "CiliumEndpoint",
             "namespace": "default",
-            "name": "guestbook-ui-56c646849b-54zqr",
-            "uid": "372a49be-63c3-4f84-b932-1a73c66e7d87",
+            "name": "guestbook-helm-guestbook-6fd56f9f49-smlhh",
+            "uid": "51ddf301-fa0b-43e6-8213-bd8de4cb058b",
             "parentRefs": [
                 {
                     "kind": "Pod",
                     "namespace": "default",
-                    "name": "guestbook-ui-56c646849b-54zqr",
-                    "uid": "7cc1e99e-73e4-41fb-8b70-d333172f328c"
+                    "name": "guestbook-helm-guestbook-6fd56f9f49-smlhh",
+                    "uid": "945b62c8-249e-4028-a436-88899f4941f8"
                 }
             ],
-            "resourceVersion": "38531",
-            "createdAt": "2023-10-30T13:01:46Z"
+            "resourceVersion": "10633",
+            "createdAt": "2023-11-23T17:30:48Z"
         },
         {
             "group": "discovery.k8s.io",
             "version": "v1",
             "kind": "EndpointSlice",
             "namespace": "default",
-            "name": "guestbook-ui-jwjbx",
-            "uid": "4c88bbc5-17da-42bf-8cc1-e7bd1f9ff857",
+            "name": "guestbook-helm-guestbook-kdmgd",
+            "uid": "7b6de5a7-1b64-4e57-986a-d22ac94655ba",
             "parentRefs": [
                 {
                     "kind": "Service",
                     "namespace": "default",
-                    "name": "guestbook-ui",
-                    "uid": "eb1d2e5f-f9a3-464f-b976-e19e577cd2cf"
+                    "name": "guestbook-helm-guestbook",
+                    "uid": "24c6779d-a92c-4fbc-a165-e3fd39db8c26"
                 }
             ],
-            "resourceVersion": "38577",
-            "createdAt": "2023-10-30T13:01:45Z"
+            "resourceVersion": "10690",
+            "createdAt": "2023-11-23T17:30:48Z"
         }
     ],
     "hosts": [
         {
-            "name": "node-group-bound-cluster-xnmx6",
+            "name": "node-group-clsuter-asd-asdasd-as-xxx7b",
             "resourcesInfo": [
                 {
                     "resourceName": "cpu",
@@ -178,9 +180,9 @@
                 }
             ],
             "systemInfo": {
-                "machineID": "b649d508cb0443a4bb68303091e772af",
-                "systemUUID": "b649d508-cb04-43a4-bb68-303091e772af",
-                "bootID": "1f5913cc-d729-4cdd-9dbf-326666e19acd",
+                "machineID": "7599f0a84e1c461c8727d70775266e71",
+                "systemUUID": "7599f0a8-4e1c-461c-8727-d70775266e71",
+                "bootID": "8a8cd824-d467-4471-9680-8a858700faff",
                 "kernelVersion": "6.1.0-12-amd64",
                 "osImage": "Debian GNU/Linux 12 (bookworm)",
                 "containerRuntimeVersion": "containerd://1.6.22",
