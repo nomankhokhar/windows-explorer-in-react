@@ -22,7 +22,7 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
             <div className="padding">&#x2705;</div>
             <div className="item-flex">
               <div>{explorer?.name}</div>
-              <div className="description">description</div>
+              <div className="description">{explorer?.kind}</div>
             </div>
           </div>
           <div className="flex-buttons">

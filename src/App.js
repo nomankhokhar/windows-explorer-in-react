@@ -10,29 +10,60 @@ function App() {
     parentID: "1",
     name: "guestbook",
     isFolder: true,
+    kind: "applications",
     items: [],
   });
 
   const { insertNode } = useTraverseTree();
 
-  const handleInsertNode = (parentID, folderId, item) => {
-    const finalTree = insertNode(explorerData, parentID, folderId, item);
+  const handleInsertNode = (parentID, folderId, item, kind) => {
+    const finalTree = insertNode(explorerData, parentID, folderId, item, kind);
     setExplorerData((preFinalTree) => (preFinalTree = finalTree));
+    console.log(finalTree);
   };
 
   const [childs, setChilds] = useState([]);
 
+  const [childDone, setChildDone] = useState(false);
   useEffect(() => {
     const handleChilders = () => {
-      childs?.map((child) => {
-        handleInsertNode(child.parentID, child.id, child.name);
+      childs?.forEach((child) => {
+        handleInsertNode(child.parentID, child.id, child.name, child.kind);
       });
+      setChildDone(true);
     };
     if (childs.length > 0) {
       handleChilders();
-      console.log(childs);
     }
   }, [childs]);
+
+  useEffect(() => {
+    const handleGrandChildern = () => {
+      let children = [];
+      data?.nodes?.forEach((node) => {
+        if (node.hasOwnProperty("parentRefs")) {
+          children = [...children, { ...node }];
+        }
+      });
+      let childernList = [];
+      for (let i = 0; i < children.length; i++) {
+        for (let j = 0; j < children.length; j++) {
+          if (children[i].uid === children[j].parentRefs[0].uid) {
+            childernList = [...childernList, { ...children[j] }];
+            handleInsertNode(
+              children[j].parentRefs[0].uid,
+              children[j].uid,
+              children[j].name,
+              children[j].kind
+            );
+          }
+        }
+      }
+    };
+    if (childDone) {
+      handleGrandChildern();
+    }
+  }, [childDone]);
 
   const handleNodes = async () => {
     data?.nodes?.forEach((node) => {
@@ -40,32 +71,28 @@ function App() {
         setChilds((prevChilds) => [
           ...prevChilds,
           {
-            id: node.parentRefs[0].uid,
+            id: node.uid,
             parentID: node.parentRefs[0].uid,
             isFolder: true,
             name: node.name,
+            kind: node.kind,
             items: [],
           },
         ]);
       } else {
         const newNode = { ...node, uid: node.uid, parentID: "1" };
-        handleInsertNode(newNode.parentID, newNode.uid, newNode.name);
+        handleInsertNode(
+          newNode.parentID,
+          newNode.uid,
+          newNode.name,
+          newNode.kind
+        );
       }
     });
   };
 
   useEffect(() => {
     handleNodes();
-
-    return () => {
-      setExplorerData({
-        id: "1",
-        parentID: "1",
-        name: "guestbook",
-        isFolder: true,
-        items: [],
-      });
-    };
   }, []);
 
   return (

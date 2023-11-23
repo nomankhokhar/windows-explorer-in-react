@@ -234,7 +234,7 @@
                             "f:redis-password": {}
                         },
                         "f:metadata": {
-                            "f:annotations": {
+                            "fannotations": {
                                 ".": {},
                                 "f:meta.helm.sh/release-name": {},
                                 "f:meta.helm.sh/release-namespace": {}

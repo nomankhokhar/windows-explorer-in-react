@@ -3,7 +3,39 @@ const explorer = {
   parentID: "1",
   name: "guestbook",
   isFolder: true,
-  items: [],
+  items: [
+    {
+      id: "1",
+      parentID: "1",
+      name: "guestbook",
+      isFolder: true,
+      items: [
+        {
+          id: "1",
+          parentID: "1",
+          name: "guestbook",
+          isFolder: true,
+          items: [
+            {
+              id: "1",
+              parentID: "1",
+              name: "guestbook",
+              isFolder: true,
+              items: [
+                {
+                  id: "1",
+                  parentID: "1",
+                  name: "guestbook",
+                  isFolder: true,
+                  items: [],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 export default explorer;
