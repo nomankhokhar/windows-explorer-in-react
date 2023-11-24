@@ -197,6 +197,42 @@
             ],
             "resourceVersion": "10633",
             "createdAt": "2023-11-23T17:30:48Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "guestbook-helm-guestbook-6fd56f9f49-nomanali-EndPoint-End",
+            "uid": "51ddf301-fa0b-43e6-8213-bd8de4cb0585677",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "guestbook-helm-guestbook-6fd56f9f49-smlhh",
+                    "uid": "51ddf301-fa0b-43e6-8213-bd8de4cb0581"
+                }
+            ],
+            "resourceVersion": "10633",
+            "createdAt": "2023-11-23T17:30:48Z"
+        },
+        {
+            "group": "cilium.io",
+            "version": "v2",
+            "kind": "CiliumEndpoint",
+            "namespace": "default",
+            "name": "guestbook-helm-guestbook-6fd56f9f49-nomanali-EndPoint-End-last",
+            "uid": "51ddf301-fa0b-43e6-8213-bd8de4cb05856789",
+            "parentRefs": [
+                {
+                    "kind": "Pod",
+                    "namespace": "default",
+                    "name": "guestbook-helm-guestbook",
+                    "uid": "7b6de5a7-1b64-4e57-986a-d22ac94655ba"
+                }
+            ],
+            "resourceVersion": "10633",
+            "createdAt": "2023-11-23T17:30:48Z"
         }
         ,
         {
@@ -217,6 +253,7 @@
             "resourceVersion": "10690",
             "createdAt": "2023-11-23T17:30:48Z"
         }
+        
     ],
     "hosts": [
         {

@@ -19,6 +19,12 @@
   align-items: center;
 }
 
+.flexTree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .item-flex {
   display: flex;
   flex-direction: column;

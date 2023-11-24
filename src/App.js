@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Folder from "./components/Folder";
 import useTraverseTree from "./hooks/use-traverse-tree";
-import data from "./argocdTree.json";
+import data from "./socks_app.json";
 
 function App() {
   const [explorerData, setExplorerData] = useState({
@@ -99,11 +99,44 @@ function App() {
     handleNodes();
   }, []);
 
+  const [scale, setScale] = useState(1);
+
+  const zoomIn = () => {
+    setScale(scale + 0.01);
+  };
+
+  const zoomOut = () => {
+    setScale(scale - 0.01);
+  };
+
   return (
     <div>
-      {explorerData && (
-        <Folder handleInsertNode={handleInsertNode} explorer={explorerData} />
-      )}
+      <div>
+        <button onClick={zoomIn}>Zoom In</button>
+        <button onClick={zoomOut}>Zoom Out</button>
+      </div>
+      <div
+        style={{
+          width: "90vw",
+          height: "90vh",
+          overflow: "scroll",
+          border: "1px solid red",
+        }}
+        className="relative flexItem"
+      >
+        <div
+          style={{
+            transform: `scale(${scale})`,
+          }}
+        >
+          {explorerData && (
+            <Folder
+              handleInsertNode={handleInsertNode}
+              explorer={explorerData}
+            />
+          )}
+        </div>
+      </div>
     </div>
   );
 }
