@@ -116,22 +116,15 @@ function App() {
   };
 
   return (
-    <div style={{ marginTop: "10px" }}>
-      <TransformWrapper
-        initialScale={0.5}
-        centerZoomedOut={true}
-        initialPositionX={200}
-        initialPositionY={150}
-      >
+    <div style={{ border: "1px solid blue" }}>
+      <TransformWrapper initialScale={0.5} minScale={0.5} maxScale={5}>
         <Controls />
         <TransformComponent>
-          <div style={{ width: "90vw", height: "90vh" }}>
-            {explorerData && (
-              <Folder
-                handleInsertNode={handleInsertNode}
-                explorer={explorerData}
-              />
-            )}
+          <div>
+            <Folder
+              handleInsertNode={handleInsertNode}
+              explorer={explorerData}
+            />
           </div>
         </TransformComponent>
       </TransformWrapper>
