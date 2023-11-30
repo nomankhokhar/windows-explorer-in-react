@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Folder from "./components/Folder";
 import useTraverseTree from "./hooks/use-traverse-tree";
-import data from "./socks_app.json";
+import data from "./argocdTree.json";
 import Draggable from "react-draggable";
 
 function App() {
