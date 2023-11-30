@@ -2,12 +2,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Folder from "./components/Folder";
 import useTraverseTree from "./hooks/use-traverse-tree";
-import data from "./argocdTree.json";
-import {
-  TransformWrapper,
-  TransformComponent,
-  useControls,
-} from "react-zoom-pan-pinch";
+import data from "./socks_app.json";
+import Draggable from "react-draggable";
 
 function App() {
   const [explorerData, setExplorerData] = useState({
@@ -104,30 +100,41 @@ function App() {
     handleNodes();
   }, []);
 
-  const Controls = () => {
-    const { zoomIn, zoomOut, resetTransform } = useControls();
-    return (
-      <>
-        <button onClick={() => zoomIn()}>Zoom In</button>
-        <button onClick={() => zoomOut()}>Zoom Out</button>
-        <button onClick={() => resetTransform()}>Reset</button>
-      </>
-    );
+  const [scale, setScale] = useState(0.8);
+
+  const handleZoomIn = () => {
+    if (scale < 1) {
+      setScale(scale + 0.05);
+    }
+  };
+
+  const handleZoomOut = () => {
+    if (scale > 0.8) {
+      setScale(scale - 0.05);
+    }
   };
 
   return (
-    <div style={{ border: "1px solid blue" }}>
-      <TransformWrapper initialScale={0.5} minScale={0.5} maxScale={5}>
-        <Controls />
-        <TransformComponent>
+    <div>
+      <div className="controls">
+        <button onClick={handleZoomIn}>Zoom In</button>
+        <button onClick={handleZoomOut}>Zoom Out</button>
+      </div>
+      <div
+        style={{
+          transform: `scale(${scale})`,
+          transition: "transform 0.3s ease-in-out",
+        }}
+      >
+        <Draggable>
           <div>
             <Folder
               handleInsertNode={handleInsertNode}
               explorer={explorerData}
             />
           </div>
-        </TransformComponent>
-      </TransformWrapper>
+        </Draggable>
+      </div>
     </div>
   );
 }
