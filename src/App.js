@@ -100,7 +100,7 @@ function App() {
     handleNodes();
   }, []);
 
-  const [scale, setScale] = useState(0.8);
+  const [scale, setScale] = useState(0.7);
 
   const handleZoomIn = () => {
     if (scale < 1) {
@@ -109,7 +109,7 @@ function App() {
   };
 
   const handleZoomOut = () => {
-    if (scale > 0.8) {
+    if (scale > 0.5) {
       setScale(scale - 0.05);
     }
   };
