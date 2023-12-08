@@ -19,10 +19,12 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
       <div className="flex" style={{ marginTop: "5px" }}>
         <div className="folder">
           <div className="flex">
-            <div className="padding">&#x2705;</div>
+            <div className="padding">&#x1F60A;</div>
             <div className="item-flex">
-              <div>{explorer?.name}</div>
-              <div className="description">{explorer?.kind}</div>
+              <div>{explorer?.name.slice(0, 15)}</div>
+              <div className="description">
+                {explorer?.kind} &#x1F49A; &#x2713;
+              </div>
             </div>
           </div>
           <div className="flex-buttons">

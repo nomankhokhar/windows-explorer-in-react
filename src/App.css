@@ -1,5 +1,6 @@
 body {
   overflow: hidden;
+  background-color: #d8e1e9;
 }
 .folder {
   margin-top: 5px;
@@ -11,7 +12,7 @@ body {
   font-family: sans-serif;
   width: 300px;
   cursor: pointer;
-  border-left: 5px solid #47d647;
+  border-radius: 10px;
 }
 
 .relative {
@@ -35,6 +36,7 @@ body {
 
 .padding {
   padding-right: 10px;
+  font-size: 20px;
 }
 
 .description {
@@ -52,8 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 3px solid #008361;
-  border-radius: 10px 0 0 10px;
+  border-left: 2px solid #b4c1c9;
   padding-left: 10px;
   padding-bottom: 5px;
   margin: auto 0;
@@ -63,7 +64,7 @@ body {
   content: "\2192";
   font-size: 35px;
   position: absolute;
-  color: #008631;
+  color: #b4c1c9;
   top: 50%;
   left: 14px;
   transform: translate(-50%, -50%);
