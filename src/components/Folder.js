@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import image from "../images/linkedIn.jpg";
 const Folder = ({ handleInsertNode = () => {}, explorer }) => {
   const [expand, setExpand] = useState(true);
   const [showInput, setShowInput] = useState({
@@ -19,7 +19,9 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
       <div className="flex" style={{ marginTop: "5px" }}>
         <div className="folder">
           <div className="flex">
-            <div className="padding">&#x1F60A;</div>
+            <div className="padding">
+              <img src={image} style={{ width: "30px" }} />
+            </div>
             <div className="item-flex">
               <div>{explorer?.name.slice(0, 15)}</div>
               <div className="description">
@@ -28,7 +30,10 @@ const Folder = ({ handleInsertNode = () => {}, explorer }) => {
             </div>
           </div>
           <div className="flex-buttons">
-            <button className="btn-button" onClick={(e) => setExpand(!expand)}>
+            <button
+              style={{ fontSize: "28px", color: "#00b480" }}
+              onClick={(e) => setExpand(!expand)}
+            >
               ⋮
             </button>
           </div>

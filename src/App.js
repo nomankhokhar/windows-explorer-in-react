@@ -4,6 +4,9 @@ import Folder from "./components/Folder";
 import useTraverseTree from "./hooks/use-traverse-tree";
 import data from "./argocdTree.json";
 import Draggable from "react-draggable";
+import reset from "./images/reSet.png";
+import ZoomIn from "./images/zoomIn.png";
+import ZoomOut from "./images/zoonOut.png";
 
 function App() {
   const [explorerData, setExplorerData] = useState({
@@ -102,6 +105,10 @@ function App() {
 
   const [scale, setScale] = useState(0.7);
 
+  const handleReset = () => {
+    setScale(0.7);
+  };
+
   const handleZoomIn = () => {
     if (scale < 1) {
       setScale(scale + 0.05);
@@ -116,9 +123,17 @@ function App() {
 
   return (
     <div>
-      <div className="controls">
-        <button onClick={handleZoomIn}>Zoom In</button>
-        <button onClick={handleZoomOut}>Zoom Out</button>
+      <div className="controls flex multi-button">
+        <button onClick={handleReset} className="flex button" id="copy">
+          <img src={reset} style={{ width: "20px" }} />
+        </button>
+        <button onClick={handleZoomIn} className="flex button" id="copy">
+          {" "}
+          <img src={ZoomIn} style={{ width: "20px" }} />
+        </button>
+        <button onClick={handleZoomOut} className="flex button" id="copy">
+          <img src={ZoomOut} style={{ width: "20px" }} />
+        </button>
       </div>
       <div
         style={{
